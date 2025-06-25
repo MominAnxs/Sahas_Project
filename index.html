@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts, inter -->
+    <!-- Google Fonts (Inter, Cal sans, Poppins, Roboto) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap 5.3.0 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -18,77 +25,1730 @@
     <title>Document</title>
 </head>
 <body>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 p-0">
-                    <!-- ---------------top-bar starts--------------- -->
-                    <div class="top-bar">
-                        <!-- ---------------Wrapper Starts--------------- -->
-                        <div class="wrapper d-flex justify-content-between align-items-center">
-                            <div class="top-left-items">
-                                <ul>
-                                    <li><img src="images/leftvector.svg"><img src="images/rightvector.svg"></li>
-                                    <li class="fw-semibold"><a href="#"> How we can help ?</a></li>
-                                    <li><a href="#"> Machines</a></li>
-                                    <li><a href="#"> Material</a></li>
-                                    <li><a href="#"> Design</a></li>
-                                </ul>
-                            </div>
-                            <div class="top-right-items">
-                                <img src="images/call.svg" alt="Call icon" class="call-icon me-2 mb-1">
-                                <span class="top-bar-phone">+91 888-777-8887</span>
-                            </div>
-                        </div>
-                        <!-- ---------------Wrapper Ends--------------- -->
-                    </div>
-                    <!-- ---------------top-bar ends--------------- -->
-                </div>
+    <!-- ---------------Header starts--------------- -->
+    <div class="container-fluid">
+        <div class="row">
 
-                <div class="col-md-12 p-0">
-                    <!-- ---------------wrapper starts--------------- -->
+            <div class="col-md-12 p-0">
+                <!-- ---------------Top-Bar Starts--------------- -->
+                <div class="top-bar">
+                    <!-- ---------------Wrapper Starts--------------- -->
+                    <div class="wrapper d-flex justify-content-between align-items-center">
+                        <div class="top-left-items">
+                            <ul>
+                                <li><img src="images/leftvector.svg"><img src="images/rightvector.svg"></li>
+                                <li class="fw-semibold"><a href="#"> How we can help ?</a></li>
+                                <li><a href="#"> Machines</a></li>
+                                <li><a href="#"> Material</a></li>
+                                <li><a href="#"> Design</a></li>
+                            </ul>
+                        </div>
+                        <div class="top-right-items">
+                            <img src="images/call.svg" alt="Call icon" class="call-icon me-2 mb-1">
+                            <span class="top-bar-phone">+91 888-777-8887</span>
+                        </div>
+                    </div>
+                    <!-- ---------------Wrapper Ends--------------- -->
+                </div>
+                <!-- ---------------Top-Bar ends--------------- -->
+            </div>
+
+            <div class="col-md-12 p-0 bottom-shadow">
+                <!-- ---------------Wrapper Starts--------------- -->
+                <div class="wrapper">
+                    <!-- ---------------Navbar Starts--------------- --> 
+                    <nav class="navbar navbar-expand-lg navbar">
+                        <div class="container p-0 m-0">
+                            <a class="navbar-brand" href="#"><img src="images/main-logo.svg"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Industries</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Technologies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">About us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                                    </li>
+                                </ul>
+                                <button class="navbar-btn ms-auto">Let's Discuss</button>
+                            </div>
+                            
+                        </div>
+                    </nav>
+                    <!-- ---------------Navbar Ends--------------- --> 
+                </div>
+                <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Header Ends--------------- -->
+
+
+    <!-- ---------------Hero-Section Starts--------------- -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- ---------------Wrapper Starts--------------- -->
                     <div class="wrapper">
-                        <!-- ---------------Navbar starts--------------- --> 
-                        <nav class="navbar navbar-expand-lg navbar">
-                            <div class="container p-0 m-0">
-                                <a class="navbar-brand" href="#"><img src="images/main-logo.svg"></a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Services</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Industries</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Technologies</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">About us</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Contact us</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
-                                        </li>
-                                    </ul>
-                                    <button class="navbar-btn ms-auto">Let's Discuss</button>
+                    <div class="hero-section">
+                        <div class="hero-texts">
+                            <h1 class="hero-title">Empower<br>the <span class="highlight-text">new</span></h1>
+                            <p class="hero-desc">From Application development to Technology procurement to material selection and complete installation and training.</p>
+                            <button class="hero-btn ms-auto">Let's Discuss</button>
+                        </div>
+                        <div class="hero-image">
+                            <img src="images/hero-img.png" class="desk-img">
+                            <img src="images/hero-mobile.png" class="d-none mobile-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Hero-Section Ends--------------- -->
+
+
+    <!-- ---------------Company-Logos Starts--------------- -->
+    <div class="container-fluid logos-section">
+    <div class="row w-100">
+        <div class="col-md-12 w-100 p-0">
+                <div class="company-logos">
+                    <div class="company-logos-text">
+                        <h2 class="company-logos-title text-center">Trusted by India's leading companies</h2>
+                        <p class="company-logos-desc text-center">Our 3D printing technology is trusted by India's most respected names in Automotive, Consumer electronic, Packaging, Household equipments, Healthcare, Dental, Aerospace, Defense, and Advanced manufacturing.</p>
+                    </div>
+                    <div class="swiper company-logos-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/company-logo-1.png" alt="Company Logo 1"></div>
+                            <div class="swiper-slide"><img src="images/company-logo-2.png" alt="Company Logo 2"></div>
+                            <div class="swiper-slide"><img src="images/company-logo-3.png" alt="Company Logo 3"></div>
+                            <div class="swiper-slide"><img src="images/company-logo-4.png" alt="Company Logo 4"></div>
+                            <div class="swiper-slide"><img src="images/company-logo-5.png" alt="Company Logo 5"></div>
+                            <div class="swiper-slide"><img src="images/company-logo-6.png" alt="Company Logo 6"></div>
+                            <div class="swiper-slide"><img src="images/company-logo-7.png" alt="Company Logo 7"></div>
+                            <div class="swiper-slide"><img src="images/company-logo-8.png" alt="Company Logo 8"></div>
+                            <div class="swiper-slide"><img src="images/company-logo-9.png" alt="Company Logo 9"></div>
+                            <div class="swiper-slide"><img src="images/company-logo-10.png" alt="Company Logo 10"></div>
+                            <div class="swiper-slide"><img src="images/company-logo-11.png" alt="Company Logo 11"></div>
+                            <div class="swiper-slide"><img src="images/company-logo-12.png" alt="Company Logo 12"></div>
+                            <div class="swiper-slide"><img src="images/company-logo-13.png" alt="Company Logo 13"></div>
+                        </div>
+                        </div>                          
+                </div>
+        </div>
+    </div>
+    </div>
+    <!-- ---------------Company-Logos Ends--------------- -->
+
+
+    <!-- ---------------Technologies-Section Starts (For Desktop & Mobile)--------------- -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+            <!-- ---------------Wrapper Starts--------------- -->
+                <div class="wrapper">
+
+                    <section class="tech-section">
+                        <div class="container">
+                            <h1 class="tech-main-title">Our Key Technologies</h1>
+
+                            <div class="tech-desktop-visible">
+
+                                <ul class="nav nav-tabs tech-nav-tabs" id="techTabs" role="tablist">
+                                    <li class="nav-item border-bottom" role="presentation">
+                                        <button class="nav-link tech-nav-link active" id="tech-sla-tab" data-bs-toggle="tab" data-bs-target="#tech-sla" type="button" role="tab" aria-controls="tech-sla" aria-selected="true">
+                                            SLA/DLP
+                                        </button>
+                                    </li>
+                                    <li class="nav-item border-bottom" role="presentation">
+                                        <button class="nav-link tech-nav-link" id="tech-sls-tab" data-bs-toggle="tab" data-bs-target="#tech-sls" type="button" role="tab" aria-controls="tech-sls" aria-selected="false">
+                                            SLS
+                                        </button>
+                                    </li>
+                                    <li class="nav-item border-bottom" role="presentation">
+                                        <button class="nav-link tech-nav-link" id="tech-dmls-tab" data-bs-toggle="tab" data-bs-target="#tech-dmls" type="button" role="tab" aria-controls="tech-dmls" aria-selected="false">
+                                            DMLS
+                                        </button>
+                                    </li>
+                                    <li class="nav-item border-bottom" role="presentation">
+                                        <button class="nav-link tech-nav-link" id="tech-fdm-tab" data-bs-toggle="tab" data-bs-target="#tech-fdm" type="button" role="tab" aria-controls="tech-fdm" aria-selected="false">
+                                            FDM & Composites
+                                        </button>
+                                    </li>
+                                    <li class="nav-item border-bottom" role="presentation">
+                                        <button class="nav-link tech-nav-link" id="tech-binder-tab" data-bs-toggle="tab" data-bs-target="#tech-binder" type="button" role="tab" aria-controls="tech-binder" aria-selected="false">
+                                            Binder Jetting<br>(Sand/Ceramic Printers)
+                                        </button>
+                                    </li>
+                                    <li class="nav-item border-bottom" role="presentation">
+                                        <button class="nav-link tech-nav-link" id="tech-ccf-tab" data-bs-toggle="tab" data-bs-target="#tech-ccf" type="button" role="tab" aria-controls="tech-ccf" aria-selected="false">
+                                            Continuous Carbon Fibre<br>(CFF)
+                                        </button>
+                                    </li>
+                                    <li class="nav-item border-bottom" role="presentation">
+                                        <button class="nav-link tech-nav-link" id="tech-scanners-tab" data-bs-toggle="tab" data-bs-target="#tech-scanners" type="button" role="tab" aria-controls="tech-scanners" aria-selected="false">
+                                            3D Scanners
+                                        </button>
+                                    </li>
+                                    <li class="nav-item border-bottom" role="presentation">
+                                        <button class="nav-link tech-nav-link" id="tech-polyjet-tab" data-bs-toggle="tab" data-bs-target="#tech-polyjet" type="button" role="tab" aria-controls="tech-polyjet" aria-selected="false">
+                                            Polyjet
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content tech-tab-content" id="techTabContent">
+                                    <div class="tab-pane fade show active" id="tech-sla" role="tabpanel" aria-labelledby="tech-sla-tab">
+                                        <div class="tech-content-area">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6">
+                                                    <img src="images/tech-img-1.png" alt="SLA 3D Printed Parts" class="tech-product-image">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h2 class="tech-content-title">Advanced Resin-Based 3D Printing for Demanding Applications.</h2>
+                                                    <p class="tech-content-description">
+                                                        With micron-level precision and smooth finishes, SLA is the go-to solution for industries that demand performance and repeatability.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="tab-pane fade" id="tech-sls" role="tabpanel" aria-labelledby="tech-sls-tab">
+                                        <div class="tech-content-area">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6">
+                                                    <img src="images/tech-img-2.png" alt="SLS 3D Printed Parts" class="tech-product-image">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h2 class="tech-content-title">Selective Laser Sintering for Complex Geometries.</h2>
+                                                    <p class="tech-content-description">
+                                                        SLS technology enables the creation of intricate parts without support structures, making it ideal for functional prototypes and end-use parts with complex internal geometries.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="tab-pane fade" id="tech-dmls" role="tabpanel" aria-labelledby="tech-dmls-tab">
+                                        <div class="tech-content-area">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6">
+                                                    <img src="images/tech-img-3.png" alt="DMLS Metal Parts" class="tech-product-image">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h2 class="tech-content-title">Direct Metal Laser Sintering for High-Performance Components.</h2>
+                                                    <p class="tech-content-description">
+                                                        DMLS produces fully dense metal parts with mechanical properties comparable to traditionally manufactured components, perfect for aerospace and medical applications.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="tab-pane fade" id="tech-fdm" role="tabpanel" aria-labelledby="tech-fdm-tab">
+                                        <div class="tech-content-area">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6">
+                                                    <img src="images/tech-img-4.png" alt="FDM 3D Printed Parts" class="tech-product-image">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h2 class="tech-content-title">Fused Deposition Modeling with Advanced Composite Materials.</h2>
+                                                    <p class="tech-content-description">
+                                                        Our FDM technology supports a wide range of thermoplastics and composite materials, offering excellent strength-to-weight ratios for industrial applications.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="tab-pane fade" id="tech-binder" role="tabpanel" aria-labelledby="tech-binder-tab">
+                                        <div class="tech-content-area">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6">
+                                                    <img src="images/tech-img-5.png" alt="Binder Jetting Parts" class="tech-product-image">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h2 class="tech-content-title">Binder Jetting for Sand and Ceramic Applications.</h2>
+                                                    <p class="tech-content-description">
+                                                        Binder jetting technology enables rapid production of sand molds and ceramic parts, offering exceptional surface finish and dimensional accuracy for casting applications.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="tab-pane fade" id="tech-ccf" role="tabpanel" aria-labelledby="tech-ccf-tab">
+                                        <div class="tech-content-area">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6">
+                                                    <img src="images/tech-img-6.png" alt="Carbon Fiber Parts" class="tech-product-image">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h2 class="tech-content-title">Continuous Carbon Fiber Technology for Ultimate Strength.</h2>
+                                                    <p class="tech-content-description">
+                                                        Our CCF technology embeds continuous carbon fiber strands throughout the part, delivering unmatched strength and stiffness comparable to aluminum at a fraction of the weight.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="tab-pane fade" id="tech-scanners" role="tabpanel" aria-labelledby="tech-scanners-tab">
+                                        <div class="tech-content-area">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6">
+                                                    <img src="images/tech-img-7.png" alt="3D Scanner" class="tech-product-image">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h2 class="tech-content-title">Precision 3D Scanning for Reverse Engineering.</h2>
+                                                    <p class="tech-content-description">
+                                                        Our advanced 3D scanning solutions capture intricate details with sub-millimeter accuracy, enabling seamless reverse engineering and quality inspection workflows.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="tab-pane fade" id="tech-polyjet" role="tabpanel" aria-labelledby="tech-polyjet-tab">
+                                        <div class="tech-content-area">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6">
+                                                    <img src="images/tech-img-8.png" alt="Polyjet 3D Printed Parts" class="tech-product-image">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h2 class="tech-content-title">Multi-Material Polyjet Printing for Realistic Prototypes.</h2>
+                                                    <p class="tech-content-description">
+                                                        Polyjet technology enables simultaneous printing of multiple materials and colors, creating realistic prototypes with varying material properties in a single build.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+
+                            <div class="tech-mobile-visible d-none">
+
+                                <div class="accordion-container">
+                                    <!-- Accordion Item 1 -->
+                                    <div class="accordion-item">
+                                        <button class="accordion-title">
+                                            <span>SLA/DLP</span>
+                                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </button>
+                                        <div class="accordion-content">
+                                            <div class="accordion-content-inner">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6">
+                                                        <img src="images/tech-img-1.png" alt="SLA 3D Printed Parts" class="tech-product-image">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <h2 class="tech-content-title">Advanced Resin-Based 3D Printing for Demanding Applications.</h2>
+                                                        <p class="tech-content-description">
+                                                            With micron-level precision and smooth finishes, SLA is the go-to solution for industries that demand performance and repeatability.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Accordion Item 2 -->
+                                    <div class="accordion-item">
+                                        <button class="accordion-title">
+                                            <span>SLS</span>
+                                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </button>
+                                        <div class="accordion-content">
+                                            <div class="accordion-content-inner">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6">
+                                                        <img src="images/tech-img-2.png" alt="SLS 3D Printed Parts" class="tech-product-image">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <h2 class="tech-content-title">Selective Laser Sintering for Complex Geometries.</h2>
+                                                        <p class="tech-content-description">
+                                                            SLS technology enables the creation of intricate parts without support structures, making it ideal for functional prototypes and end-use parts with complex internal geometries.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Accordion Item 3 -->
+                                    <div class="accordion-item">
+                                        <button class="accordion-title">
+                                            <span>DMLS</span>
+                                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </button>
+                                        <div class="accordion-content">
+                                            <div class="accordion-content-inner">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6">
+                                                        <img src="images/tech-img-3.png" alt="DMLS Metal Parts" class="tech-product-image">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <h2 class="tech-content-title">Direct Metal Laser Sintering for High-Performance Components.</h2>
+                                                        <p class="tech-content-description">
+                                                            DMLS produces fully dense metal parts with mechanical properties comparable to traditionally manufactured components, perfect for aerospace and medical applications.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Accordion Item 4 -->
+                                    <div class="accordion-item">
+                                        <button class="accordion-title">
+                                            <span>FDM & Composites</span>
+                                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </button>
+                                        <div class="accordion-content">
+                                            <div class="accordion-content-inner">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6">
+                                                        <img src="images/tech-img-4.png" alt="FDM 3D Printed Parts" class="tech-product-image">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <h2 class="tech-content-title">Fused Deposition Modeling with Advanced Composite Materials.</h2>
+                                                        <p class="tech-content-description">
+                                                            Our FDM technology supports a wide range of thermoplastics and composite materials, offering excellent strength-to-weight ratios for industrial applications.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Accordion Item 5 -->
+                                    <div class="accordion-item">
+                                        <button class="accordion-title">
+                                            <span>Binder Jetting (Sand/Ceramic Printers)</span>
+                                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </button>
+                                        <div class="accordion-content">
+                                            <div class="accordion-content-inner">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6">
+                                                        <img src="images/tech-img-5.png" alt="Binder Jetting Parts" class="tech-product-image">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <h2 class="tech-content-title">Binder Jetting for Sand and Ceramic Applications.</h2>
+                                                        <p class="tech-content-description">
+                                                            Binder jetting technology enables rapid production of sand molds and ceramic parts, offering exceptional surface finish and dimensional accuracy for casting applications.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Accordion Item 6 -->
+                                    <div class="accordion-item">
+                                        <button class="accordion-title">
+                                            <span>Continuous Carbon Fibre (CCF)</span>
+                                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </button>
+                                        <div class="accordion-content">
+                                            <div class="accordion-content-inner">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6">
+                                                        <img src="images/tech-img-6.png" alt="Carbon Fiber Parts" class="tech-product-image">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <h2 class="tech-content-title">Continuous Carbon Fiber Technology for Ultimate Strength.</h2>
+                                                        <p class="tech-content-description">
+                                                            Our CCF technology embeds continuous carbon fiber strands throughout the part, delivering unmatched strength and stiffness comparable to aluminum at a fraction of the weight.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Accordion Item 7 -->
+                                    <div class="accordion-item">
+                                        <button class="accordion-title">
+                                            <span>3D Scanners</span>
+                                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </button>
+                                        <div class="accordion-content">
+                                            <div class="accordion-content-inner">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6">
+                                                        <img src="images/tech-img-7.png" alt="3D Scanner" class="tech-product-image">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <h2 class="tech-content-title">Precision 3D Scanning for Reverse Engineering.</h2>
+                                                        <p class="tech-content-description">
+                                                            Our advanced 3D scanning solutions capture intricate details with sub-millimeter accuracy, enabling seamless reverse engineering and quality inspection workflows.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Accordion Item 8 -->
+                                    <div class="accordion-item">
+                                        <button class="accordion-title">
+                                            <span>Polyjet</span>
+                                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </button>
+                                        <div class="accordion-content">
+                                            <div class="accordion-content-inner">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6">
+                                                        <img src="images/tech-img-8.png" alt="Polyjet 3D Printed Parts" class="tech-product-image">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <h2 class="tech-content-title">Multi-Material Polyjet Printing for Realistic Prototypes.</h2>
+                                                        <p class="tech-content-description">
+                                                            Polyjet technology enables simultaneous printing of multiple materials and colors, creating realistic prototypes with varying material properties in a single build.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                
                                 </div>
                                 
                             </div>
-                        </nav>
-                        <!-- ---------------Navbar Ends--------------- --> 
-                    </div>
-                    <!-- ---------------wrapper ends--------------- -->
-                </div>
-        </div>
+                        </div>
+                    </section>
 
+                </div>
+            <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Technologies-Section Ends (For Desktop & Mobile)--------------- -->
+
+
+    <!-- ---------------Industries-Section Starts (For Desktop & Mobile)--------------- -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- ---------------Wrapper Starts--------------- -->
+                 <div class="wrapper">
+                    <section class="industries-section">
+                        <div class="industries-container">
+                            <h1 class="industries-title">Industries We Serve</h1>
+                            <p class="industries-subtitle">
+                                Discover how we enable 1500+ companies pan India achieve higher sales efficiency and productivity.
+                            </p>
+                            
+                            <div class="industries-desktop-visible">
+                                <div class="industries-grid">
+                                    <div class="industries-card">
+                                        <div class="industries-card-inner">
+                                            <div class="industries-card-background"></div>
+                                            <div class="industries-card-content">
+                                                <h3 class="industries-card-title">
+                                                    Healthcare/Dental 
+                                                    <img src="images/arrow-upward.svg" alt="Arrow Icon" class="industries-card-icon ms-auto">
+                                                </h3>
+                                                <p class="industries-card-description">
+                                                    Improving precision and outcomes in modern healthcare
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="industries-card">
+                                        <div class="industries-card-inner">
+                                            <div class="industries-card-background"></div>
+                                            <div class="industries-card-content">
+                                                <h3 class="industries-card-title">
+                                                    Automotive
+                                                    <img src="images/arrow-upward.svg" alt="Arrow Icon" class="industries-card-icon ms-auto">
+                                                </h3>
+                                                <p class="industries-card-description">
+                                                    Improving precision and outcomes in modern healthcare
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="industries-card">
+                                        <div class="industries-card-inner">
+                                            <div class="industries-card-background"></div>
+                                            <div class="industries-card-content">
+                                                <h3 class="industries-card-title">
+                                                    Consumer Electronics
+                                                    <img src="images/arrow-upward.svg" alt="Arrow Icon" class="industries-card-icon ms-auto">
+                                                </h3>
+                                                <p class="industries-card-description">
+                                                    Improving precision and outcomes in modern healthcare
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="industries-card">
+                                        <div class="industries-card-inner">
+                                            <div class="industries-card-background"></div>
+                                            <div class="industries-card-content">
+                                                <h3 class="industries-card-title">
+                                                    Tools and Dies
+                                                    <img src="images/arrow-upward.svg" alt="Arrow Icon" class="industries-card-icon ms-auto">
+                                                </h3>
+                                                <p class="industries-card-description">
+                                                    Improving precision and outcomes in modern healthcare
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="industries-card">
+                                        <div class="industries-card-inner">
+                                            <div class="industries-card-background"></div>
+                                            <div class="industries-card-content">
+                                                <h3 class="industries-card-title">
+                                                    Aerospace/Defence
+                                                    <img src="images/arrow-upward.svg" alt="Arrow Icon" class="industries-card-icon ms-auto">
+                                                </h3>
+                                                <p class="industries-card-description">
+                                                    Improving precision and outcomes in modern healthcare
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="industries-card">
+                                        <div class="industries-card-inner">
+                                            <div class="industries-card-background"></div>
+                                            <div class="industries-card-content">
+                                                <h3 class="industries-card-title">
+                                                    Packaging
+                                                    <img src="images/arrow-upward.svg" alt="Arrow Icon" class="industries-card-icon ms-auto">
+                                                </h3>
+                                                <p class="industries-card-description">
+                                                    Improving precision and outcomes in modern healthcare
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="industries-card">
+                                        <div class="industries-card-inner">
+                                            <div class="industries-card-background"></div>
+                                            <div class="industries-card-content">
+                                                <h3 class="industries-card-title">
+                                                    Robotics & Automation
+                                                    <img src="images/arrow-upward.svg" alt="Arrow Icon" class="industries-card-icon ms-auto">
+                                                </h3>
+                                                <p class="industries-card-description">
+                                                    Improving precision and outcomes in modern healthcare
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="industries-card">
+                                        <div class="industries-card-inner">
+                                            <div class="industries-card-background"></div>
+                                            <div class="industries-card-content">
+                                                <h3 class="industries-card-title">
+                                                    Education
+                                                    <img src="images/arrow-upward.svg" alt="Arrow Icon" class="industries-card-icon ms-auto">
+                                                </h3>
+                                                <p class="industries-card-description">
+                                                    Improving precision and outcomes in modern healthcare
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="industries-mobile-visible d-none">
+                                <p class="text-center lead"> swipe to see more</p>
+                                <div class="swiper-container industries-slider">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="industries-card">
+                                                    <div class="industries-card-inner">
+                                                        <div class="industries-card-background"></div>
+                                                        <div class="industries-card-content">
+                                                            <h3 class="industries-card-title">
+                                                                Healthcare/Dental
+                                                                <img src="images/arrow-upward.svg" alt="Arrow Icon" class="industries-card-icon ms-auto">
+                                                            </h3>
+                                                            <p class="industries-card-description">
+                                                                Improving precision and outcomes in modern healthcare
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="industries-card">
+                                                    <div class="industries-card-inner">
+                                                        <div class="industries-card-background"></div>
+                                                        <div class="industries-card-content">
+                                                            <h3 class="industries-card-title">
+                                                                Healthcare/Dental
+                                                                <img src="images/arrow-upward.svg" alt="Arrow Icon" class="industries-card-icon ms-auto">
+                                                            </h3>
+                                                            <p class="industries-card-description">
+                                                                Improving precision and outcomes in modern healthcare
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="industries-card">
+                                                    <div class="industries-card-inner">
+                                                        <div class="industries-card-background"></div>
+                                                        <div class="industries-card-content">
+                                                            <h3 class="industries-card-title">
+                                                                Healthcare/Dental
+                                                                <img src="images/arrow-upward.svg" alt="Arrow Icon" class="industries-card-icon ms-auto">
+                                                            </h3>
+                                                            <p class="industries-card-description">
+                                                                Improving precision and outcomes in modern healthcare
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="industries-card">
+                                                    <div class="industries-card-inner">
+                                                        <div class="industries-card-background"></div>
+                                                        <div class="industries-card-content">
+                                                            <h3 class="industries-card-title">
+                                                                Healthcare/Dental
+                                                                <img src="images/arrow-upward.svg" alt="Arrow Icon" class="industries-card-icon ms-auto">
+                                                            </h3>
+                                                            <p class="industries-card-description">
+                                                                Improving precision and outcomes in modern healthcare
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                 </div>
+                <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Industries-Section Ends (For Desktop & Mobile)--------------- -->
+
+
+    <!-- ---------------Services-Section Starts (For Desktop & Mobile)--------------- -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- ---------------Wrapper Starts--------------- -->
+                <div class="wrapper">
+                    
+                    <div class="services-main-container">
+                        <div class="services-content-wrapper">
+                            <div class="services-header-section">
+                                <h1 class="services-main-title">Our Offerings</h1>
+                                <p class="services-subtitle">Discover how we enable 1500+ companies across India achieve higher sales efficiency and productivity.</p>
+                            </div>
+
+                            <div class="services-desktop-visible">
+                                <div class="services-grid-container">
+                                    <!-- Reverse Engineering Card -->
+                                    <a href="#">
+                                        <div class="services-card">
+                                            <div class="services-card-header">
+                                                <h3 class="services-card-title">Reverse Engineering<br>& Digital Replication</h3>
+                                                <div class="services-arrow-icon"><img src="images/arrow-upward.svg"></div>
+                                            </div>
+                                            <p class="services-card-description">For select applications, our engineers can scan, model, and replicate components using</p>
+                                            <div class="services-image-container">
+                                                <img src="images/services-img-1.png" alt="Reverse Engineering Image" width="100%" class="mt-3">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="services-card">
+                                            <div class="services-card-header">
+                                                <h3 class="services-card-title">Reverse Engineering<br>& Digital Replication</h3>
+                                                <div class="services-arrow-icon"><img src="images/arrow-upward.svg"></div>
+                                            </div>
+                                            <p class="services-card-description">For select applications, our engineers can scan, model, and replicate components using</p>
+                                            <div class="services-image-container">
+                                                <img src="images/services-img-1.png" alt="Reverse Engineering Image" width="100%" class="mt-3">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="services-card">
+                                            <div class="services-card-header">
+                                                <h3 class="services-card-title">Reverse Engineering<br>& Digital Replication</h3>
+                                                <div class="services-arrow-icon"><img src="images/arrow-upward.svg"></div>
+                                            </div>
+                                            <p class="services-card-description">For select applications, our engineers can scan, model, and replicate components using</p>
+                                            <div class="services-image-container">
+                                                <img src="images/services-img-1.png" alt="Reverse Engineering Image" width="100%" class="mt-3">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="services-card">
+                                            <div class="services-card-header">
+                                                <h3 class="services-card-title">Reverse Engineering<br>& Digital Replication</h3>
+                                                <div class="services-arrow-icon"><img src="images/arrow-upward.svg"></div>
+                                            </div>
+                                            <p class="services-card-description">For select applications, our engineers can scan, model, and replicate components using</p>
+                                            <div class="services-image-container">
+                                                <img src="images/services-img-1.png" alt="Reverse Engineering Image" width="100%" class="mt-3">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="services-card">
+                                            <div class="services-card-header">
+                                                <h3 class="services-card-title">Reverse Engineering<br>& Digital Replication</h3>
+                                                <div class="services-arrow-icon"><img src="images/arrow-upward.svg"></div>
+                                            </div>
+                                            <p class="services-card-description">For select applications, our engineers can scan, model, and replicate components using</p>
+                                            <div class="services-image-container">
+                                                <img src="images/services-img-1.png" alt="Reverse Engineering Image" width="100%" class="mt-3">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="services-card">
+                                            <div class="services-card-header">
+                                                <h3 class="services-card-title">Reverse Engineering<br>& Digital Replication</h3>
+                                                <div class="services-arrow-icon"><img src="images/arrow-upward.svg"></div>
+                                            </div>
+                                            <p class="services-card-description">For select applications, our engineers can scan, model, and replicate components using</p>
+                                            <div class="services-image-container">
+                                                <img src="images/services-img-1.png" alt="Reverse Engineering Image" width="100%" class="mt-3">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="services-mobile-visible d-none">
+
+                                <div class="swiper-container offerings-slider">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="services-card">
+                                                    <div class="services-card-header">
+                                                        <h3 class="services-card-title">Reverse Engineering<br>& Digital Replication</h3>
+                                                        <div class="services-arrow-icon"><img src="images/arrow-upward.svg"></div>
+                                                    </div>
+                                                    <p class="services-card-description">For select applications, our engineers can scan, model, and replicate components using</p>
+                                                    <div class="services-image-container">
+                                                        <img src="images/mobile-services-1.png" alt="Reverse Engineering Image" width="100%" class="mt-3">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="services-card">
+                                                    <div class="services-card-header">
+                                                        <h3 class="services-card-title">Reverse Engineering<br>& Digital Replication</h3>
+                                                        <div class="services-arrow-icon"><img src="images/arrow-upward.svg"></div>
+                                                    </div>
+                                                    <p class="services-card-description">For select applications, our engineers can scan, model, and replicate components using</p>
+                                                    <div class="services-image-container">
+                                                        <img src="images/mobile-services-1.png" alt="Reverse Engineering Image" width="100%" class="mt-3">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="services-card">
+                                                    <div class="services-card-header">
+                                                        <h3 class="services-card-title">Reverse Engineering<br>& Digital Replication</h3>
+                                                        <div class="services-arrow-icon"><img src="images/arrow-upward.svg"></div>
+                                                    </div>
+                                                    <p class="services-card-description">For select applications, our engineers can scan, model, and replicate components using</p>
+                                                    <div class="services-image-container">
+                                                        <img src="images/mobile-services-1.png" alt="Reverse Engineering Image" width="100%" class="mt-3">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <div class="services-card">
+                                                    <div class="services-card-header">
+                                                        <h3 class="services-card-title">Reverse Engineering<br>& Digital Replication</h3>
+                                                        <div class="services-arrow-icon"><img src="images/arrow-upward.svg"></div>
+                                                    </div>
+                                                    <p class="services-card-description">For select applications, our engineers can scan, model, and replicate components using</p>
+                                                    <div class="services-image-container">
+                                                        <img src="images/mobile-services-1.png" alt="Reverse Engineering Image" width="100%" class="mt-3">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Navigation container -->
+                                    <div class="swiper-navigation-wrapper">
+                                        <!-- Navigation buttons -->
+                                        <div class="services-swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+                                        <div class="services-swiper-pagination"></div> <!-- Fraction pagination will show here -->
+                                        <div class="services-swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+                                    </div>  
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Services-Section Ends (For Desktop & Mobile)--------------- -->
+
+
+    <!-- ---------------Stats-Section Starts--------------- -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <section class="stats-section">
+                    <h2 class="stats-heading">
+                      Experience That Helps You Build <br />
+                      Better, Faster, Smarter
+                    </h2>
+                    <div class="stats-container">
+                        <div class="stats-box">
+                            <span class="stats-number">13</span>
+                            <span class="stats-label">Years</span>
+                        </div>
+                        <div class="stats-divider"></div>
+                        <div class="stats-box">
+                            <span class="stats-number">1500</span>
+                            <span class="stats-label">Customers</span>
+                        </div>
+                        <div class="stats-divider"></div>
+                        <div class="stats-box">
+                            <span class="stats-number">50,000</span>
+                            <span class="stats-label">Projects</span>
+                        </div>
+                        <div class="stats-divider"></div>
+                        <div class="stats-box">
+                            <span class="stats-number">100</span>
+                            <span class="stats-label">Engineers</span>
+                        </div>
+                        <div class="stats-divider"></div>
+                        <div class="stats-box">
+                            <span class="stats-number">200</span>
+                            <span class="stats-label">Machines</span>
+                        </div>
+                    </div>
+                </section>                  
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Stats-Section Ends--------------- -->
+
+
+    <!-- ---------------Form-Section Starts--------------- -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+            <!-- ---------------Wrapper Starts--------------- -->
+                <div class="wrapper">
+
+                    <div class="c-form-container">
+                        
+                        <div class="c-form-content">
+                            <h1>Let's connect</h1>
+                            
+                            <form action="#" method="POST" class="c-form-body">
+                                <div>
+                                    <input type="text" name="name" id="name" placeholder="Your Name" class="c-form-input">
+                                </div>
+                                
+                                <div>
+                                    <input type="email" name="email" id="email" placeholder="Email" class="c-form-input">
+                                </div>
+
+                                <div>
+                                    <input type="tel" name="phone" id="phone" placeholder="Phone Number" class="c-form-input">
+                                </div>
+
+                                <div>
+                                    <select id="technology" name="technology" class="c-form-select">
+                                        <option selected disabled>Technology Required</option>
+                                        <option>3D Printing</option>
+                                        <option>CNC Machining</option>
+                                        <option>Laser Cutting</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <textarea name="comment" id="comment" rows="4" placeholder="Comment" class="c-form-textarea"></textarea>
+                                </div>
+
+                                <div>
+                                    <button type="submit" class="c-form-submit-btn">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="c-form-image-wrapper">
+                            <img src="images/form-img.png" alt="Contact Form Image" class="c-form-image">
+                        </div>
+                    </div>
+
+                </div>
+            <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Form-Section Ends--------------- -->
+
+
+    <!-- ---------------wcu Section Starts--------------- -->
+     <div class="container-fluid wcu-section">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- ---------------Wrapper Starts--------------- -->
+                 <div class="wrapper">
+
+                    <section class="">
+                        <div class="wcu-container">
+                            <!-- Left Side: Title and Description -->
+                            <div class="wcu-content-left">
+                                <h2 class="wcu-heading">Why Choose <br><img src="images/wcu-sahas-txt.png"> ?</h2>
+                                <p class="wcu-description">
+                                    Discover how we enable 1500+ companies across India achieve higher sales efficiency and productivity.
+                                </p>
+                            </div>
+                            
+                            <!-- Right Side: Features Grid -->
+                            <div class="wcu-features-grid">
+                                <div class="wcu-feature-item">
+                                    <div class="wcu-feature-icon">
+                                        <img src="images/wcu-icon-1.svg" alt="WCU Icon 1">
+                                    </div>
+                                    <p class="wcu-feature-text">Application-Driven Solutions, Not Just Machines</p>
+                                </div>
+                                <div class="wcu-feature-item">
+                                    <div class="wcu-feature-icon">
+                                        <img src="images/wcu-icon-2.svg" alt="WCU Icon 2">
+                                    </div>
+                                    <p class="wcu-feature-text">Expertise Across Industries</p>
+                                </div>
+                                <div class="wcu-feature-item">
+                                    <div class="wcu-feature-icon">
+                                        <img src="images/wcu-icon-3.svg" alt="WCU Icon 3">
+                                    </div>
+                                    <p class="wcu-feature-text">Rapid Prototyping to Scalable Production</p>
+                                </div>
+                                <div class="wcu-feature-item">
+                                    <div class="wcu-feature-icon">
+                                        <img src="images/wcu-icon-4.svg" alt="WCU Icon 4">
+                                    </div>
+                                    <p class="wcu-feature-text">Best-in-Class Technology Partnerships</p>
+                                </div>
+                                <div class="wcu-feature-item">
+                                    <div class="wcu-feature-icon">
+                                        <img src="images/wcu-icon-5.svg" alt="WCU Icon 5">
+                                    </div>
+                                    <p class="wcu-feature-text">Exceptional After-Sales Support & Service</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+    </div>
+    <!-- ---------------wcu Section Ends--------------- -->
+
+    <!-- ---------------Our-Work-Section Starts--------------- -->
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <section class="unique-work-section-container">
+                    <div class="unique-section-header-content">
+                        <h2>Our Best Work</h2>
+                        <p>A few highlights from 50,000+ projects delivered across industries</p>
+                    </div>
+            
+                    <!-- Top Gallery Row: Moves Left-to-Right Visually -->
+                    <div class="unique-gallery-row-wrapper unique-gallery-row-top">
+                        <div class="unique-gallery-track">
+                            <!-- First set of unique images -->
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-1.png" alt="Project Image 1">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-2.png" alt="Project Image 2">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-3.png" alt="Project Image 3">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-4.png" alt="Project Image 4">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-1.png" alt="Project Image 1">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-2.png" alt="Project Image 2">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-3.png" alt="Project Image 3">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-4.png" alt="Project Image 4">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-1.png" alt="Project Image 1">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-2.png" alt="Project Image 2">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-3.png" alt="Project Image 3">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-4.png" alt="Project Image 4">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-1.png" alt="Project Image 1">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-2.png" alt="Project Image 2">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-3.png" alt="Project Image 3">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-4.png" alt="Project Image 4">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Bottom Gallery Row: Moves Right-to-Left Visually -->
+                    <div class="unique-gallery-row-wrapper unique-gallery-row-bottom">
+                        <div class="unique-gallery-track">
+                            <!-- First set of unique images -->
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-1.png" alt="Project Image 1">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-2.png" alt="Project Image 2">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-3.png" alt="Project Image 3">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-4.png" alt="Project Image 4">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-1.png" alt="Project Image 1">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-2.png" alt="Project Image 2">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-3.png" alt="Project Image 3">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-4.png" alt="Project Image 4">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-1.png" alt="Project Image 1">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-2.png" alt="Project Image 2">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-3.png" alt="Project Image 3">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-4.png" alt="Project Image 4">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-1.png" alt="Project Image 1">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-2.png" alt="Project Image 2">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-3.png" alt="Project Image 3">
+                            </div>
+                            <div class="unique-gallery-image-item">
+                                <img src="images/work-img-4.png" alt="Project Image 4">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+     </div>
+    <!-- ---------------Our-Work-Section Ends--------------- -->
+
+
+    <!-- ---------------Partners-Section Starts--------------- -->
+     <div class="contriner-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- ---------------Wrapper Starts--------------- -->
+                <div class="wrapper">
+
+                    <section class="unique-testimonial-section">
+                        <h2 class="unique-section-title">What Our Partners Say</h2>
+                        <div class="unique-testimonial-slider-container">
+                            <button class="unique-slider-arrow left" onclick="moveSlide(-1)"><img src="images/arrow-left.svg"></button> <!-- Left arrow -->
+                            <div class="unique-slider-wrapper">
+                                <div class="unique-slider-track" id="testimonialTrack">
+
+                                    <div class="unique-testimonial-card">
+                                        <div class="unique-card-orange-overlay"></div>
+                                        <div class="unique-profile-image-wrapper">
+                                            <img src="images/partners-pro-img.png" alt="Partner Profile 1">
+                                        </div>
+                                        <div class="unique-card-content">
+                                            <div class="unique-testimonial-name">Sample Name 1</div>
+                                            <p class="unique-testimonial-text">
+                                                Lorem ipsum dolor sit amet consectetur. Porta sed tempor scelerisque tellus tellus arcu. Interdum pharetra quam condimentum pellentesque suspendisse. Proin facilisi lobortis nibh ac nullam orci fringilla. Amet leo phasellus libero velit non nulla nunc ut.
+                                            </p>
+                                            <div class="unique-partner-info">NAME ABC <br> <span>Designation</span></div>
+                                            <div class="unique-stats-row">
+                                                <div class="unique-stat-item">
+                                                    <span class="unique-stat-value">DROP IN</span><br>
+                                                    <span class="unique-stat-description">TAT</span>
+                                                </div>
+                                                <div class="stats-divider"></div>
+                                                <div class="unique-stat-item d-flex align-items-center justify-content-between">
+                                                    <span class="unique-stat-value">60%</span>
+                                                    <span class="unique-stat-description">INCREASE IN<br>CALL CENTER EFFICIENCY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="unique-testimonial-card">
+                                        <div class="unique-card-orange-overlay"></div>
+                                        <div class="unique-profile-image-wrapper">
+                                            <img src="images/partners-pro-img.png" alt="Partner Profile 1">
+                                        </div>
+                                        <div class="unique-card-content">
+                                            <div class="unique-testimonial-name">Sample Name 1</div>
+                                            <p class="unique-testimonial-text">
+                                                Lorem ipsum dolor sit amet consectetur. Porta sed tempor scelerisque tellus tellus arcu. Interdum pharetra quam condimentum pellentesque suspendisse. Proin facilisi lobortis nibh ac nullam orci fringilla. Amet leo phasellus libero velit non nulla nunc ut.
+                                            </p>
+                                            <div class="unique-partner-info">NAME ABC <br> <span>Designation</span></div>
+                                            <div class="unique-stats-row">
+                                                <div class="unique-stat-item">
+                                                    <span class="unique-stat-value">DROP IN</span><br>
+                                                    <span class="unique-stat-description">TAT</span>
+                                                </div>
+                                                <div class="stats-divider"></div>
+                                                <div class="unique-stat-item d-flex align-items-center justify-content-between">
+                                                    <span class="unique-stat-value">60%</span>
+                                                    <span class="unique-stat-description">INCREASE IN<br>CALL CENTER EFFICIENCY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="unique-testimonial-card">
+                                        <div class="unique-card-orange-overlay"></div>
+                                        <div class="unique-profile-image-wrapper">
+                                            <img src="images/partners-pro-img.png" alt="Partner Profile 1">
+                                        </div>
+                                        <div class="unique-card-content">
+                                            <div class="unique-testimonial-name">Sample Name 1</div>
+                                            <p class="unique-testimonial-text">
+                                                Lorem ipsum dolor sit amet consectetur. Porta sed tempor scelerisque tellus tellus arcu. Interdum pharetra quam condimentum pellentesque suspendisse. Proin facilisi lobortis nibh ac nullam orci fringilla. Amet leo phasellus libero velit non nulla nunc ut.
+                                            </p>
+                                            <div class="unique-partner-info">NAME ABC <br> <span>Designation</span></div>
+                                            <div class="unique-stats-row">
+                                                <div class="unique-stat-item">
+                                                    <span class="unique-stat-value">DROP IN</span><br>
+                                                    <span class="unique-stat-description">TAT</span>
+                                                </div>
+                                                <div class="stats-divider"></div>
+                                                <div class="unique-stat-item d-flex align-items-center justify-content-between">
+                                                    <span class="unique-stat-value">60%</span>
+                                                    <span class="unique-stat-description">INCREASE IN<br>CALL CENTER EFFICIENCY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <button class="unique-slider-arrow right" onclick="moveSlide(1)"><img src="images/arrow-right.svg"></button> <!-- Right arrow -->
+                        </div>
+                    </section>
+
+                </div>
+                <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+     </div>
+    <!-- ---------------Partners-Section Ends--------------- -->
+
+
+    <!-- ---------------Case-Studies-Section Starts--------------- -->
+
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="wrapper" style="overflow-x: clip;">
+                <div class="cs-container">
+                    <div class="cs-header">
+                        <h1 class="cs-main-heading">Our Case Studies</h1>
+                        <p class="cs-subheading">Deep dives into real-world challenges — and how we solved them.</p>
+                    </div>
+            
+                    <div class="cs-dropdown-wrapper">
+                        <select class="cs-dropdown">
+                            <option>Choose case studies industries</option>
+                            <option>Technology</option>
+                            <option>Healthcare</option>
+                            <option>Finance</option>
+                            <option>E-commerce</option>
+                        </select>
+                    </div>
+            
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper cs-swiper-wrapper justify-content-start">
+                            <a href="#">
+                                <div class="swiper-slide cs-swiper-slide">
+                                    <div class="cs-card">
+                                        <div class="cs-card-category">Lorem Ipsum</div>
+                                        <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                        <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                        <a href="#" class="cs-card-link">
+                                            Read more
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="swiper-slide cs-swiper-slide">
+                                    <div class="cs-card">
+                                        <div class="cs-card-category">Lorem Ipsum</div>
+                                        <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                        <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                        <a href="#" class="cs-card-link">
+                                            Read more
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="swiper-slide cs-swiper-slide">
+                                    <div class="cs-card">
+                                        <div class="cs-card-category">Lorem Ipsum</div>
+                                        <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                        <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                        <a href="#" class="cs-card-link">
+                                            Read more
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="swiper-slide cs-swiper-slide">
+                                    <div class="cs-card">
+                                        <div class="cs-card-category">Lorem Ipsum</div>
+                                        <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                        <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                        <a href="#" class="cs-card-link">
+                                            Read more
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="swiper-slide cs-swiper-slide">
+                                    <div class="cs-card">
+                                        <div class="cs-card-category">Lorem Ipsum</div>
+                                        <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                        <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                        <a href="#" class="cs-card-link">
+                                            Read more
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="swiper-slide cs-swiper-slide">
+                                    <div class="cs-card">
+                                        <div class="cs-card-category">Lorem Ipsum</div>
+                                        <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                        <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                        <a href="#" class="cs-card-link">
+                                            Read more
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="cs-slider-controls">
+                        <div class="swiper-pagination"></div>
+                        <div class="cs-nav-buttons">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- ---------------Case-Studies-Section Ends--------------- -->
+
+    <!-- ---------------Footer Starts--------------- -->
+     <div class="container-fluid bg-black">
+        <div class="row">
+            <div class="col-md-12">
+
+                    <footer class="ft-footer">
+                        <div class="ft-container">
+                            <!-- Main Footer Content -->
+                            <div class="ft-main">
+                                <div class="ft-col ft-col-brand">
+                                    <img src="images/main-logo.svg">
+                                    <p class="ft-brand-motto">We are a technology & innovation company that helps bring new ideas to life for organizations and new product developers.</p>
+                                </div>
+                
+                                <div class="ft-col">
+                                    <h3>Service</h3>
+                                    <ul>
+                                        <li><a href="#">Support & Technical Assistance</a></li>
+                                        <li><a href="#">Tailored 3D Printing Solutions</a></li>
+                                        <li><a href="#">Reverse Engineering & Digital Replication</a></li>
+                                        <li><a href="#">Scalable Manufacturing</a></li>
+                                        <li><a href="#">Machine Selection & Material Training</a></li>
+                                    </ul>
+                                </div>
+                
+                                <div class="ft-col">
+                                    <h3>Company</h3>
+                                    <ul>
+                                        <li><a href="#">Industries</a></li>
+                                        <li><a href="#">Technology</a></li>
+                                        <li><a href="#">Machines</a></li>
+                                        <li><a href="#">Designs</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                
+                                <div class="ft-col">
+                                    <p>Your Email</p>
+                                    <form class="ft-newsletter-form">
+                                        <input type="email" placeholder="Enter Your Email">
+                                        <button type="submit">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                
+                            <!-- Horizontal Line -->
+                            <hr class="ft-hr">
+                
+                            <!-- Bottom Legal/Contact Info -->
+                            <div class="ft-legal">
+                                <p class="m-0"><i class="fa-regular fa-copyright"></i> Copyright Sahas production</p>
+                                <ul class="ft-legal-list">
+                                    <li>
+                                        <img src="images/footer-location-icon.svg" alt="Location Icon" class="me-2">
+                                        8819 Ohio St. South Gate, CA 90280
+                                    </li>
+                                    <li>
+                                        <img src="images/footer-email-icon.svg" alt="Email Icon" class="me-2">
+                                        Ourstudio@hello.com
+                                    </li>
+                                    <li>
+                                        <img src="images/footer-phone-icon.svg" alt="Phone Icon" class="me-2">
+                                        +1 386-688-3295
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+     </div>
+    <!-- ---------------Footer Ends--------------- -->
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Bootstrap 5.3.0 js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- jquery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+
+    // Initialize Swiper for company logos slider
+    const swiper = new Swiper('.company-logos-slider', {
+        
+        loop: false,
+        slidesPerView: 7,
+        spaceBetween: 25,
+        speed: 3000,
+        allowTouchMove: false,
+        grabCursor: false,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false
+        },
+        freeMode: true,
+        freeModeMomentum: false,
+
+        on: {
+
+            // Reset to start if near end
+            slideChange: function () {
+            if (swiper.activeIndex >= swiper.slides.length / 2) {
+                swiper.setTranslate(0);
+                swiper.slideTo(0, 0);
+            }
+            }
+        }
+    });
+
+    // Partners Section Testimonials Slider Functionality
+    $(document).ready(function () {
+        const testimonialTrack = document.getElementById('testimonialTrack');
+        const testimonialCards = document.querySelectorAll('.unique-testimonial-card');
+        let currentIndex = 0;
+        let cardWidth = 0;
+
+        // Pagination
+        const paginationContainer = document.createElement('div');
+        paginationContainer.className = 'unique-pagination';
+        document.querySelector('.unique-testimonial-slider-container').appendChild(paginationContainer);
+
+        function createPaginationDots() {
+            paginationContainer.innerHTML = '';
+            testimonialCards.forEach((_, index) => {
+            const dot = document.createElement('span');
+            dot.className = 'dot';
+            if (index === currentIndex) dot.classList.add('active');
+            dot.addEventListener('click', () => showSlide(index));
+            paginationContainer.appendChild(dot);
+            });
+        }
+
+        function updateCardWidth() {
+            if (testimonialCards.length > 0) {
+            const style = getComputedStyle(testimonialCards[0]);
+            cardWidth = testimonialCards[0].offsetWidth + parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+            showSlide(currentIndex);
+            }
+        }
+
+        function showSlide(index) {
+            if (index >= testimonialCards.length) {
+            currentIndex = 0;
+            } else if (index < 0) {
+            currentIndex = testimonialCards.length - 1;
+            } else {
+            currentIndex = index;
+            }
+            testimonialTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+            // Update pagination dots
+            const dots = document.querySelectorAll('.unique-pagination .dot');
+            dots.forEach((dot, idx) => dot.classList.toggle('active', idx === currentIndex));
+        }
+
+        window.moveSlide = function (direction) {
+            showSlide(currentIndex + direction);
+        };
+
+        $(window).on('resize', function () {
+            updateCardWidth();
+            togglePagination();
+        });
+
+        function togglePagination() {
+            if (window.innerWidth < 767) {
+            paginationContainer.style.display = 'flex';
+            createPaginationDots();
+            } else {
+            paginationContainer.style.display = 'none';
+            }
+        }
+
+        updateCardWidth();
+        togglePagination();
+        showSlide(currentIndex);
+    });
+
+    // Initialize Swiper for Case-Studies Section
+    var cs_swiper = new Swiper('.swiper-container', {
+            // How many slides to show at once
+            slidesPerView: 1,
+            // Space between slides
+            spaceBetween: 30,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                }
+            },
+            // Pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar', // Use a progress bar
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    // Get all the accordion title buttons
+    const accordionTitles = document.querySelectorAll('.accordion-title');
+
+    // Add a click event listener to each title
+    accordionTitles.forEach(title => {
+        title.addEventListener('click', () => {
+            // Find the parent accordion item
+            const accordionItem = title.parentElement;
+
+            // Close all other accordion items
+            // This makes it so only one item can be open at a time
+            document.querySelectorAll('.accordion-item').forEach(item => {
+                // If the item is not the one that was clicked and it's active, close it
+                if (item !== accordionItem && item.classList.contains('active')) {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Toggle the 'active' class on the clicked item
+            accordionItem.classList.toggle('active');
+        });
+    });
+
+    // swiper for technology-section (for mobile)
+    var industries_swiper = new Swiper('.offerings-slider', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        grabCursor: true,
+
+        navigation: {
+            nextEl: '.services-swiper-button-next',
+            prevEl: '.services-swiper-button-prev',
+        },
+
+        pagination: {
+            el: '.services-swiper-pagination',
+            type: 'fraction',
+        },
+
+        breakpoints: {
+            640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            },
+            768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+            },
+        }
+    });
+
+
+    </script>                 
+
 </body>
 </html>
