@@ -23,10 +23,66 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Document</title>
+
+    <style>
+
+        .core-values:not(.core-values:first-child) {
+            margin-top: 40px;
+        }
+
+        .core-values-text p{
+
+            color: #6D6D6D !important;
+            margin-bottom: 25px;
+        }
+
+        .cs-container{
+
+            padding: 0 !important;
+        }
+
+        .cs-header{
+
+            text-align: start;
+        }
+
+        .cs-dropdown-wrapper{
+
+            justify-content: flex-start;
+        }
+
+        @media(max-width: 768px) {
+
+            .core-values{
+
+                margin-top: 40px;
+            }
+
+            .core-values-title h2{
+
+                font-size: 30px !important;
+            }
+
+            .core-values-text p{
+
+                font-size: 14px !important;
+            }
+
+            .cs-individual-stat h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .cs-individual-stat p {
+                font-size: 0.875rem !important;
+            }
+        }
+
+    </style>
+
 </head>
 <body>
     <!-- ---------------Header starts--------------- -->
-    <div class="container-fluid">
+<div class="container-fluid">
         <div class="row">
 
             <div class="col-md-12 p-0">
@@ -107,7 +163,8 @@
                     <nav class="mt-5" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Industries we serve</li>
+                            <li class="breadcrumb-item" aria-current="page"><a href="case-study.html">Our Case Studies</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Case Study Name</li>
                         </ol>
                     </nav>
                     <div class="hero-section">
@@ -129,175 +186,79 @@
     <!-- ---------------Hero-Section Ends--------------- -->
 
 
-    <!-- ---------------Company-Logos Starts--------------- -->
-    <div class="container-fluid logos-section">
-    <div class="row">
-        <div class="col-md-12">
-                <div class="company-logos">
-                    <div class="company-logos-text">
-                        <h2 class="company-logos-title text-center">Trusted by India's leading companies</h2>
-                        <p class="company-logos-desc text-center">Our 3D printing technology is trusted by India's most respected names in Automotive, Consumer electronic, Packaging, Household equipments, Healthcare, Dental, Aerospace, Defense, and Advanced manufacturing.</p>
-                    </div>
-                    <div class="swiper company-logos-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="images/company-logo-1.png" alt="Company Logo 1"></div>
-                            <div class="swiper-slide"><img src="images/company-logo-2.png" alt="Company Logo 2"></div>
-                            <div class="swiper-slide"><img src="images/company-logo-3.png" alt="Company Logo 3"></div>
-                            <div class="swiper-slide"><img src="images/company-logo-4.png" alt="Company Logo 4"></div>
-                            <div class="swiper-slide"><img src="images/company-logo-5.png" alt="Company Logo 5"></div>
-                            <div class="swiper-slide"><img src="images/company-logo-6.png" alt="Company Logo 6"></div>
-                            <div class="swiper-slide"><img src="images/company-logo-7.png" alt="Company Logo 7"></div>
-                            <div class="swiper-slide"><img src="images/company-logo-8.png" alt="Company Logo 8"></div>
-                            <div class="swiper-slide"><img src="images/company-logo-9.png" alt="Company Logo 9"></div>
-                            <div class="swiper-slide"><img src="images/company-logo-10.png" alt="Company Logo 10"></div>
-                            <div class="swiper-slide"><img src="images/company-logo-11.png" alt="Company Logo 11"></div>
-                            <div class="swiper-slide"><img src="images/company-logo-12.png" alt="Company Logo 12"></div>
-                            <div class="swiper-slide"><img src="images/company-logo-13.png" alt="Company Logo 13"></div>
+    <!-- ---------------cs-stat Starts--------------- -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cs-stat-container">
+                    <!-- ---------------Wrapper Starts--------------- -->
+                    <div class="wrapper d-flex justify-content-center align-items-center">
+                        <div class="cs-individual-stat">
+                            <h2>2.4x</h2>
+                            <p class="mb-0">Increase in revenue</p>
                         </div>
-                        </div>                          
+                        <div class="cs-individual-stat">
+                            <h2>2.4x</h2>
+                            <p class="mb-0">Increase in revenue</p>
+                        </div>
+                        <div class="cs-individual-stat">
+                            <h2>2.4x</h2>
+                            <p class="mb-0">Increase in revenue</p>
+                        </div>
+                    </div>
+                    <!-- ---------------Wrapper Ends--------------- -->
                 </div>
+            </div>
         </div>
     </div>
-    </div>
-    <!-- ---------------Company-Logos Ends--------------- -->
+    <!-- ---------------cs-stat Ends--------------- -->
 
 
-    <!-- ---------------Industries-Circle Starts--------------- -->
-    <div class="container-fluid">
+    <!-- ---------------cs-para Starts--------------- -->
+     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <!-- ---------------Wrapper Starts--------------- -->
                 <div class="wrapper">
-                    <div class="industries-circle-container">
-                        <h1 class="industries-circle-heading text-center">Lorem Ipsum Sample Text</h1>
-                        <div class="container">
-                            <div class="row circle-grid">
-                                <div class="col-lg-3 col-md-6 industries-circle text-center">
-                                    <div class="industries-img"><img src="images/industries-circle.png" class="w-100"></div>
-                                    <p class="circle-heading mt-3">Rapid Prototyping</p>
-                                </div>
-                                <div class="col-lg-3 col-md-6 industries-circle text-center">
-                                    <div class="industries-img"><img src="images/industries-circle.png" class="w-100"></div>
-                                    <p class="circle-heading mt-3">Rapid Prototyping</p>
-                                </div>
-                                <div class="col-lg-3 col-md-6 industries-circle text-center">
-                                    <div class="industries-img"><img src="images/industries-circle.png" class="w-100"></div>
-                                    <p class="circle-heading mt-3">Rapid Prototyping</p>
-                                </div>
-                                <div class="col-lg-3 col-md-6 industries-circle text-center">
-                                    <div class="industries-img"><img src="images/industries-circle.png" class="w-100"></div>
-                                    <p class="circle-heading mt-3">Rapid Prototyping</p>
-                                </div>
-                            </div>
-                            <div class="row circle-grid mt-3">
-                                <div class="col-lg-3 col-md-6 industries-circle text-center">
-                                    <div class="industries-img"><img src="images/industries-circle.png" class="w-100"></div>
-                                    <p class="circle-heading mt-3">Rapid Prototyping</p>
-                                </div>
-                                <div class="col-lg-3 col-md-6 industries-circle text-center">
-                                    <div class="industries-img"><img src="images/industries-circle.png" class="w-100"></div>
-                                    <p class="circle-heading mt-3">Rapid Prototyping</p>
-                                </div>
-                                <div class="col-lg-3 col-md-6 industries-circle text-center">
-                                    <div class="industries-img"><img src="images/industries-circle.png" class="w-100"></div>
-                                    <p class="circle-heading mt-3">Rapid Prototyping</p>
-                                </div>
-                                <div class="col-lg-3 col-md-6 industries-circle text-center">
-                                    <div class="industries-img"><img src="images/industries-circle.png" class="w-100"></div>
-                                    <p class="circle-heading mt-3">Rapid Prototyping</p>
-                                </div>
-                            </div>
+                    <div class="core-values align-items-start">
+                        <div class="core-values-title"><h2>Meet the Brand</h2></div>
+                        <div class="core-values-text">
+                            <p>Lorem ipsum dolor sit amet consectetur. Maecenas tincidunt ultrices rhoncus felis nisi erat elementum. Integer consectetur pellentesque fringilla dolor. At netus accumsan in lorem vitae tellus adipiscing turpis hendrerit. Proin tortor eleifend massa enim eu amet urna turpis.</p>
+                        </div>
+                    </div>
+                    <div class="core-values align-items-start">
+                        <div class="core-values-title"><h2>The Challenge</h2></div>
+                        <div class="core-values-text">
+                            <p>Lorem ipsum dolor sit amet consectetur. Maecenas tincidunt ultrices rhoncus felis nisi erat elementum. Integer consectetur pellentesque fringilla dolor. At netus accumsan in lorem vitae tellus adipiscing turpis hendrerit. Proin tortor eleifend massa enim eu amet urna turpis.</p>
+                        </div>
+                    </div>
+                    <div class="core-values align-items-start">
+                        <div class="core-values-title"><h2>The Solution with EasyInsights</h2></div>
+                        <div class="core-values-text">
+                            <p>Lorem ipsum dolor sit amet consectetur. Maecenas tincidunt ultrices rhoncus felis nisi erat elementum. Integer consectetur pellentesque fringilla dolor.</p>
+                        </div>
+                    </div>
+                    <div class="core-values align-items-start">
+                        <div class="core-values-title"><h2>Implementation</h2></div>
+                        <div class="core-values-text">
+                            <p>Lorem ipsum dolor sit amet consectetur. Maecenas tincidunt ultrices rhoncus felis nisi erat elementum. Integer consectetur pellentesque fringilla dolor.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Maecenas tincidunt ultrices rhoncus felis nisi erat elementum. Integer consectetur pellentesque fringilla dolor.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Maecenas tincidunt ultrices rhoncus felis nisi erat elementum. Integer consectetur pellentesque fringilla dolor.</p>
+                        </div>
+                    </div>
+                    <div class="core-values align-items-start">
+                        <div class="core-values-title"><h2>Result</h2></div>
+                        <div class="core-values-text">
+                            <p>Lorem ipsum dolor sit amet consectetur. Maecenas tincidunt ultrices rhoncus felis nisi erat elementum. Integer consectetur pellentesque fringilla dolor.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Maecenas tincidunt ultrices rhoncus felis nisi erat elementum. Integer consectetur pellentesque fringilla dolor.</p>
                         </div>
                     </div>
                 </div>
                 <!-- ---------------Wrapper Ends--------------- -->
             </div>
         </div>
-    </div>
-    <!-- ---------------Industries-Circle Ends--------------- -->
-
-
-    <!-- ---------------Industries-Square Starts--------------- -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- ---------------Wrapper Starts--------------- -->
-                <div class="wrapper">
-                    <div class="industries-square-container">
-                        <h1 class="industries-square-heading text-center">Lorem Ipsum Sample Text</h1>
-                        <div class="container">
-                            <div class="row mt-3">
-
-                                <div class="col-md-12 industries-img-texts">
-                                    <div class="industries-square-texts">
-                                        <h1 class="square-heading">Stereolithography (SLA)</h1>
-                                        <ul class="text-list">
-                                            <li>Lorem Ipsum Sample Text</li>
-                                            <li>Lorem Ipsum Sample Text</li>
-                                            <li>Lorem Ipsum Sample Text</li>
-                                            <li>Lorem Ipsum Sample Text</li>
-                                        </ul>
-                                    </div>
-                                    <div class="industries-square-img">
-                                        <img src="images/square-img.png" class="w-100">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12 industries-img-texts">
-                                    <div class="industries-square-img">
-                                        <img src="images/square-img.png" class="w-100">
-                                    </div>
-                                    <div class="industries-square-texts">
-                                        <h1 class="square-heading">Stereolithography (SLA)</h1>
-                                        <ul class="text-list">
-                                            <li>Lorem Ipsum Sample Text</li>
-                                            <li>Lorem Ipsum Sample Text</li>
-                                            <li>Lorem Ipsum Sample Text</li>
-                                            <li>Lorem Ipsum Sample Text</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-
-                                <div class="col-md-12 industries-img-texts">
-                                    <div class="industries-square-texts">
-                                        <h1 class="square-heading">Stereolithography (SLA)</h1>
-                                        <ul class="text-list">
-                                            <li>Lorem Ipsum Sample Text</li>
-                                            <li>Lorem Ipsum Sample Text</li>
-                                            <li>Lorem Ipsum Sample Text</li>
-                                            <li>Lorem Ipsum Sample Text</li>
-                                        </ul>
-                                    </div>
-                                    <div class="industries-square-img">
-                                        <img src="images/square-img.png" class="w-100">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12 industries-img-texts">
-                                    <div class="industries-square-img">
-                                        <img src="images/square-img.png" class="w-100">
-                                    </div>
-                                    <div class="industries-square-texts">
-                                        <h1 class="square-heading">Stereolithography (SLA)</h1>
-                                        <ul class="text-list">
-                                            <li>Lorem Ipsum Sample Text</li>
-                                            <li>Lorem Ipsum Sample Text</li>
-                                            <li>Lorem Ipsum Sample Text</li>
-                                            <li>Lorem Ipsum Sample Text</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ---------------Wrapper Ends--------------- -->
-            </div>
-        </div>
-    </div>
-    <!-- ---------------Industries-Square Ends--------------- -->
+     </div>
+    <!-- ---------------cs-para Ends--------------- -->
 
 
     <!-- ---------------Case-Studies-Section (for Mobile & Desktop) Starts--------------- -->
@@ -308,7 +269,6 @@
                 <div class="cs-container position-relative mb-0">
                     <div class="cs-header">
                         <h1 class="cs-main-heading">Our Case Studies</h1>
-                        <p class="cs-subheading">Deep dives into real-world challenges — and how we solved them.</p>
                     </div>
             
                     <div class="cs-dropdown-wrapper">
@@ -629,22 +589,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <script>
-
-    // Initialize Swiper for company logos slider
-    const swiper = new Swiper('.company-logos-slider', {
-        loop: true,
-        slidesPerView: 'auto',
-        spaceBetween: 20,
-        speed: 3000,
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: false
-        },
-        freeMode: true,
-        freeModeMomentum: false,
-        allowTouchMove: true,
-        grabCursor: true
-    });
 
     // Initialize Swiper for Case-Studies Section for Desktop
     var cs_swiper_desktop = new Swiper('.cs-swiper-container', {

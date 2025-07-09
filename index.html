@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- AOS Scroll Animation  -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -38,8 +41,8 @@
                             <ul>
                                 <li><img src="images/leftvector.svg"><img src="images/rightvector.svg"></li>
                                 <li class="fw-semibold"><a href="#"> How we can help ?</a></li>
-                                <li><a href="#"> Machines</a></li>
-                                <li><a href="#"> Material</a></li>
+                                <li><a href="machines.html"> Machines</a></li>
+                                <li><a href="materials.html"> Material</a></li>
                                 <li><a href="#"> Design</a></li>
                             </ul>
                         </div>
@@ -59,29 +62,29 @@
                     <!-- ---------------Navbar Starts--------------- --> 
                     <nav class="navbar navbar-expand-lg navbar">
                         <div class="container p-0 m-0">
-                            <a class="navbar-brand" href="#"><img src="images/main-logo.svg"></a>
+                            <a class="navbar-brand m-0" href="index.html"><img src="images/main-logo.svg"></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Services</a>
+                                        <a class="nav-link active" aria-current="page" href="services.html">Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Industries</a>
+                                        <a class="nav-link active" aria-current="page" href="industries.html">Industries</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Technologies</a>
+                                        <a class="nav-link active" aria-current="page" href="technology.html">Technologies</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">About us</a>
+                                        <a class="nav-link active" aria-current="page" href="about_us.html">About us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+                                        <a class="nav-link active" aria-current="page" href="contact_us.html">Contact us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                                        <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
                                     </li>
                                 </ul>
                                 <button class="navbar-btn ms-auto">Let's Discuss</button>
@@ -105,12 +108,12 @@
                 <!-- ---------------Wrapper Starts--------------- -->
                     <div class="wrapper">
                     <div class="hero-section">
-                        <div class="hero-texts">
-                            <h1 class="hero-title">Empower<br>the <span class="highlight-text">new</span></h1>
+                        <div class="hero-texts" data-aos="fade-right" data-aos-duration="1000">
+                            <h1 class="hero-title">Empower the <span class="highlight-text">new</span></h1>
                             <p class="hero-desc">From Application development to Technology procurement to material selection and complete installation and training.</p>
                             <button class="hero-btn ms-auto">Let's Discuss</button>
                         </div>
-                        <div class="hero-image">
+                        <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
                             <img src="images/hero-img.png" class="desk-img">
                             <img src="images/hero-mobile.png" class="d-none mobile-img">
                         </div>
@@ -125,10 +128,10 @@
 
     <!-- ---------------Company-Logos Starts--------------- -->
     <div class="container-fluid logos-section">
-    <div class="row w-100">
-        <div class="col-md-12 w-100 p-0">
+    <div class="row">
+        <div class="col-md-12">
                 <div class="company-logos">
-                    <div class="company-logos-text">
+                    <div class="company-logos-text" data-aos="fade-down" data-aos-duration="1000">
                         <h2 class="company-logos-title text-center">Trusted by India's leading companies</h2>
                         <p class="company-logos-desc text-center">Our 3D printing technology is trusted by India's most respected names in Automotive, Consumer electronic, Packaging, Household equipments, Healthcare, Dental, Aerospace, Defense, and Advanced manufacturing.</p>
                     </div>
@@ -157,7 +160,7 @@
 
 
     <!-- ---------------Technologies-Section Starts (For Desktop & Mobile)--------------- -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="1000">
         <div class="row">
             <div class="col-md-12">
             <!-- ---------------Wrapper Starts--------------- -->
@@ -564,7 +567,7 @@
 
 
     <!-- ---------------Industries-Section Starts (For Desktop & Mobile)--------------- -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="1000">
         <div class="row">
             <div class="col-md-12">
                 <!-- ---------------Wrapper Starts--------------- -->
@@ -701,7 +704,6 @@
                             </div>
 
                             <div class="industries-mobile-visible d-none">
-                                <p class="text-center lead"> swipe to see more</p>
                                 <div class="swiper-container industries-slider">
                                     <div class="swiper-wrapper">
 
@@ -795,7 +797,7 @@
 
 
     <!-- ---------------Services-Section Starts (For Desktop & Mobile)--------------- -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="1000">
         <div class="row">
             <div class="col-md-12">
                 <!-- ---------------Wrapper Starts--------------- -->
@@ -972,7 +974,7 @@
 
 
     <!-- ---------------Stats-Section Starts--------------- -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="1000">
         <div class="row">
             <div class="col-md-12">
                 <section class="stats-section">
@@ -982,27 +984,27 @@
                     </h2>
                     <div class="stats-container">
                         <div class="stats-box">
-                            <span class="stats-number">13</span>
+                            <span id="stat-years" class="stats-number">0</span>
                             <span class="stats-label">Years</span>
                         </div>
                         <div class="stats-divider"></div>
                         <div class="stats-box">
-                            <span class="stats-number">1500</span>
+                            <span id="stat-customers" class="stats-number">0</span>
                             <span class="stats-label">Customers</span>
                         </div>
                         <div class="stats-divider"></div>
                         <div class="stats-box">
-                            <span class="stats-number">50,000</span>
+                            <span id="stat-projects" class="stats-number">0</span>
                             <span class="stats-label">Projects</span>
                         </div>
                         <div class="stats-divider"></div>
                         <div class="stats-box">
-                            <span class="stats-number">100</span>
+                            <span id="stat-engineers" class="stats-number">0</span>
                             <span class="stats-label">Engineers</span>
                         </div>
                         <div class="stats-divider"></div>
                         <div class="stats-box">
-                            <span class="stats-number">200</span>
+                            <span id="stat-machines" class="stats-number">0</span>
                             <span class="stats-label">Machines</span>
                         </div>
                     </div>
@@ -1014,7 +1016,7 @@
 
 
     <!-- ---------------Form-Section Starts--------------- -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="1000">
         <div class="row">
             <div class="col-md-12">
             <!-- ---------------Wrapper Starts--------------- -->
@@ -1083,7 +1085,7 @@
                     <section class="">
                         <div class="wcu-container">
                             <!-- Left Side: Title and Description -->
-                            <div class="wcu-content-left">
+                            <div class="wcu-content-left" data-aos="fade-right" data-aos-duration="1000">
                                 <h2 class="wcu-heading">Why Choose <br><img src="images/wcu-sahas-txt.png"> ?</h2>
                                 <p class="wcu-description">
                                     Discover how we enable 1500+ companies across India achieve higher sales efficiency and productivity.
@@ -1091,7 +1093,7 @@
                             </div>
                             
                             <!-- Right Side: Features Grid -->
-                            <div class="wcu-features-grid">
+                            <div class="wcu-features-grid" data-aos="fade-left" data-aos-duration="1000">
                                 <div class="wcu-feature-item">
                                     <div class="wcu-feature-icon">
                                         <img src="images/wcu-icon-1.svg" alt="WCU Icon 1">
@@ -1134,11 +1136,11 @@
     <!-- ---------------wcu Section Ends--------------- -->
 
     <!-- ---------------Our-Work-Section Starts--------------- -->
-     <div class="container-fluid">
+     <div class="container-fluid" data-aos="fade-up" data-aos-duration="1000">
         <div class="row">
             <div class="col-md-12">
                 <section class="unique-work-section-container">
-                    <div class="unique-section-header-content">
+                    <div class="unique-section-header-content" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Our Best Work</h2>
                         <p>A few highlights from 50,000+ projects delivered across industries</p>
                     </div>
@@ -1307,7 +1309,7 @@
 
 
     <!-- ---------------Partners-Section Starts--------------- -->
-     <div class="contriner-fluid">
+     <div class="contriner-fluid" data-aos="fade-up" data-aos-duration="1000">
         <div class="row">
             <div class="col-md-12">
                 <!-- ---------------Wrapper Starts--------------- -->
@@ -1321,11 +1323,11 @@
                                 <div class="unique-slider-track" id="testimonialTrack">
 
                                     <div class="unique-testimonial-card">
-                                        <div class="unique-card-orange-overlay"></div>
+                                        <div class="unique-card-orange-overlay" data-aos="fade-right" data-aos-duration="1000"></div>
                                         <div class="unique-profile-image-wrapper">
                                             <img src="images/partners-pro-img.png" alt="Partner Profile 1">
                                         </div>
-                                        <div class="unique-card-content">
+                                        <div class="unique-card-content" data-aos="fade-left" data-aos-duration="1000">
                                             <div class="unique-testimonial-name">Sample Name 1</div>
                                             <p class="unique-testimonial-text">
                                                 Lorem ipsum dolor sit amet consectetur. Porta sed tempor scelerisque tellus tellus arcu. Interdum pharetra quam condimentum pellentesque suspendisse. Proin facilisi lobortis nibh ac nullam orci fringilla. Amet leo phasellus libero velit non nulla nunc ut.
@@ -1336,9 +1338,12 @@
                                                     <span class="unique-stat-value">DROP IN</span><br>
                                                     <span class="unique-stat-description">TAT</span>
                                                 </div>
-                                                <div class="stats-divider"></div>
-                                                <div class="unique-stat-item d-flex align-items-center justify-content-between">
-                                                    <span class="unique-stat-value">60%</span>
+                                                <div class="unique-stat-item d-flex align-items-center justify-content-between gap-3">
+                                                    <div class="circular-progress-wrapper">
+                                                        <div class="circular-progress" data-percent="60">
+                                                            <span class="progress-value">60%</span>
+                                                        </div>
+                                                    </div>   
                                                     <span class="unique-stat-description">INCREASE IN<br>CALL CENTER EFFICIENCY</span>
                                                 </div>
                                             </div>
@@ -1361,9 +1366,12 @@
                                                     <span class="unique-stat-value">DROP IN</span><br>
                                                     <span class="unique-stat-description">TAT</span>
                                                 </div>
-                                                <div class="stats-divider"></div>
-                                                <div class="unique-stat-item d-flex align-items-center justify-content-between">
-                                                    <span class="unique-stat-value">60%</span>
+                                                <div class="unique-stat-item d-flex align-items-center justify-content-between gap-3">
+                                                    <div class="circular-progress-wrapper">
+                                                        <div class="circular-progress" data-percent="60">
+                                                            <span class="progress-value">60%</span>
+                                                        </div>
+                                                    </div>   
                                                     <span class="unique-stat-description">INCREASE IN<br>CALL CENTER EFFICIENCY</span>
                                                 </div>
                                             </div>
@@ -1386,9 +1394,12 @@
                                                     <span class="unique-stat-value">DROP IN</span><br>
                                                     <span class="unique-stat-description">TAT</span>
                                                 </div>
-                                                <div class="stats-divider"></div>
-                                                <div class="unique-stat-item d-flex align-items-center justify-content-between">
-                                                    <span class="unique-stat-value">60%</span>
+                                                <div class="unique-stat-item d-flex align-items-center justify-content-between gap-3">
+                                                    <div class="circular-progress-wrapper">
+                                                        <div class="circular-progress" data-percent="60">
+                                                            <span class="progress-value">60%</span>
+                                                        </div>
+                                                    </div>                                                    
                                                     <span class="unique-stat-description">INCREASE IN<br>CALL CENTER EFFICIENCY</span>
                                                 </div>
                                             </div>
@@ -1409,18 +1420,18 @@
     <!-- ---------------Partners-Section Ends--------------- -->
 
 
-    <!-- ---------------Case-Studies-Section Starts--------------- -->
+    <!-- ---------------Case-Studies-Section (for Mobile & Desktop) Starts--------------- -->
      <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="wrapper">
                 <div class="cs-container position-relative">
-                    <div class="cs-header">
+                    <div class="cs-header" data-aos="fade-up" data-aos-duration="1000">
                         <h1 class="cs-main-heading">Our Case Studies</h1>
                         <p class="cs-subheading">Deep dives into real-world challenges — and how we solved them.</p>
                     </div>
             
-                    <div class="cs-dropdown-wrapper">
+                    <div class="cs-dropdown-wrapper"data-aos="fade-up" data-aos-duration="1000">
                         <select class="cs-dropdown">
                             <option>Choose case studies industries</option>
                             <option>Technology</option>
@@ -1429,96 +1440,167 @@
                             <option>E-commerce</option>
                         </select>
                     </div>
-            
-                    <div class="swiper-container cs-swiper-container">
-                        <div class="swiper-wrapper cs-swiper-wrapper justify-content-start">
-                            <a href="#">
-                                <div class="swiper-slide cs-swiper-slide">
-                                    <div class="cs-card">
-                                        <div class="cs-card-category">Lorem Ipsum</div>
-                                        <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
-                                        <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
-                                        <a href="#" class="cs-card-link">
-                                            Read more
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        </a>
+                    
+                    <div class="cs-desktop-visible" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="swiper-container cs-swiper-container">
+                            <div class="swiper-wrapper cs-swiper-wrapper justify-content-start">
+                                <a href="#">
+                                    <div class="swiper-slide cs-swiper-slide">
+                                        <div class="cs-card">
+                                            <div class="cs-card-category">Lorem Ipsum</div>
+                                            <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                            <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                            <a href="#" class="cs-card-link">
+                                                Read more
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="swiper-slide cs-swiper-slide">
-                                    <div class="cs-card">
-                                        <div class="cs-card-category">Lorem Ipsum</div>
-                                        <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
-                                        <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
-                                        <a href="#" class="cs-card-link">
-                                            Read more
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        </a>
+                                </a>
+                                <a href="#">
+                                    <div class="swiper-slide cs-swiper-slide">
+                                        <div class="cs-card">
+                                            <div class="cs-card-category">Lorem Ipsum</div>
+                                            <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                            <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                            <a href="#" class="cs-card-link">
+                                                Read more
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="swiper-slide cs-swiper-slide">
-                                    <div class="cs-card">
-                                        <div class="cs-card-category">Lorem Ipsum</div>
-                                        <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
-                                        <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
-                                        <a href="#" class="cs-card-link">
-                                            Read more
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        </a>
+                                </a>
+                                <a href="#">
+                                    <div class="swiper-slide cs-swiper-slide">
+                                        <div class="cs-card">
+                                            <div class="cs-card-category">Lorem Ipsum</div>
+                                            <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                            <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                            <a href="#" class="cs-card-link">
+                                                Read more
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="swiper-slide cs-swiper-slide">
-                                    <div class="cs-card">
-                                        <div class="cs-card-category">Lorem Ipsum</div>
-                                        <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
-                                        <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
-                                        <a href="#" class="cs-card-link">
-                                            Read more
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        </a>
+                                </a>
+                                <a href="#">
+                                    <div class="swiper-slide cs-swiper-slide">
+                                        <div class="cs-card">
+                                            <div class="cs-card-category">Lorem Ipsum</div>
+                                            <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                            <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                            <a href="#" class="cs-card-link">
+                                                Read more
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="swiper-slide cs-swiper-slide">
-                                    <div class="cs-card">
-                                        <div class="cs-card-category">Lorem Ipsum</div>
-                                        <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
-                                        <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
-                                        <a href="#" class="cs-card-link">
-                                            Read more
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        </a>
+                                </a>
+                                <a href="#">
+                                    <div class="swiper-slide cs-swiper-slide">
+                                        <div class="cs-card">
+                                            <div class="cs-card-category">Lorem Ipsum</div>
+                                            <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                            <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                            <a href="#" class="cs-card-link">
+                                                Read more
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="swiper-slide cs-swiper-slide">
-                                    <div class="cs-card">
-                                        <div class="cs-card-category">Lorem Ipsum</div>
-                                        <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
-                                        <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
-                                        <a href="#" class="cs-card-link">
-                                            Read more
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        </a>
+                                </a>
+                                <a href="#">
+                                    <div class="swiper-slide cs-swiper-slide">
+                                        <div class="cs-card">
+                                            <div class="cs-card-category">Lorem Ipsum</div>
+                                            <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                            <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                            <a href="#" class="cs-card-link">
+                                                Read more
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="cs-slider-controls d-flex  gap-3">
+                            <div class="swiper-scrollbar flex-grow-1"></div>
+                            <div class="cs-nav-buttons d-flex gap-2">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="cs-slider-controls d-flex  gap-3">
-                        <div class="swiper-scrollbar flex-grow-1"></div>
-                        <div class="cs-nav-buttons d-flex gap-2">
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+
+                    <div class="services-mobile-visible d-none" data-aos="fade-up" data-aos-duration="1000">
+
+                        <div class="swiper-container offerings-slider">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cs-card">
+                                            <div class="cs-card-category">Lorem Ipsum</div>
+                                            <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                            <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                            <a href="#" class="cs-card-link">
+                                                Read more
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cs-card">
+                                            <div class="cs-card-category">Lorem Ipsum</div>
+                                            <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                            <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                            <a href="#" class="cs-card-link">
+                                                Read more
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cs-card">
+                                            <div class="cs-card-category">Lorem Ipsum</div>
+                                            <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                            <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                            <a href="#" class="cs-card-link">
+                                                Read more
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="cs-card">
+                                            <div class="cs-card-category">Lorem Ipsum</div>
+                                            <h3 class="cs-card-title">2.8x Increase in Repeat Purchases</h3>
+                                            <p class="cs-card-description">Lorem ipsum dolor sit amet consectetur. Lacinia aliquam congue sed diam felis dictum vulputate viverra.</p>
+                                            <a href="#" class="cs-card-link">
+                                                Read more
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Navigation container -->
+                            <div class="swiper-navigation-wrapper">
+                                <!-- Navigation buttons -->
+                                <div class="services-swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+                                <div class="services-swiper-pagination"></div> <!-- Fraction pagination will show here -->
+                                <div class="services-swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>  
                         </div>
+
                     </div>
                     
             
@@ -1527,7 +1609,7 @@
             </div>
         </div>
      </div>
-    <!-- ---------------Case-Studies-Section Ends--------------- -->
+    <!-- ---------------Case-Studies-Section (for Mobile & Desktop) Ends--------------- -->
 
     <!-- ---------------Footer Starts--------------- -->
      <div class="container-fluid bg-black">
@@ -1563,14 +1645,6 @@
                                         <li><a href="#">Designs</a></li>
                                         <li><a href="#">Contact Us</a></li>
                                     </ul>
-                                </div>
-                
-                                <div class="ft-col">
-                                    <p>Your Email</p>
-                                    <form class="ft-newsletter-form">
-                                        <input type="email" placeholder="Enter Your Email">
-                                        <button type="submit">Subscribe</button>
-                                    </form>
                                 </div>
                             </div>
                 
@@ -1613,34 +1687,46 @@
     <!-- jquery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
+    <!-- AOS Scroll Animation  -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- CountUp.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.6.2/dist/countUp.umd.js"></script>
+    
+    <script>
+      AOS.init();
+    </script>
+    
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/6868abefcb7d8519107da3e3/1ivcdv8li';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
+
     <script>
 
     // Initialize Swiper for company logos slider
     const swiper = new Swiper('.company-logos-slider', {
-        
-        loop: false,
-        slidesPerView: 7,
-        spaceBetween: 25,
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
         speed: 3000,
-        allowTouchMove: false,
-        grabCursor: false,
         autoplay: {
             delay: 0,
             disableOnInteraction: false
         },
         freeMode: true,
         freeModeMomentum: false,
-
-        on: {
-
-            // Reset to start if near end
-            slideChange: function () {
-            if (swiper.activeIndex >= swiper.slides.length / 2) {
-                swiper.setTranslate(0);
-                swiper.slideTo(0, 0);
-            }
-            }
-        }
+        allowTouchMove: true,
+        grabCursor: true
     });
 
     // Partners Section Testimonials Slider Functionality
@@ -1739,10 +1825,10 @@
         showSlide(currentIndex);
     });
 
-    // Initialize Swiper for Case-Studies Section
-    var cs_swiper = new Swiper('.cs-swiper-container', {
+    // Initialize Swiper for Case-Studies Section for Desktop
+    var cs_swiper_desktop = new Swiper('.cs-swiper-container', {
         // How many slides to show at once
-        slidesPerView: 1,
+        slidesPerView: 3,
         // Space between slides
         spaceBetween: 45,
         // Responsive breakpoints
@@ -1757,6 +1843,21 @@
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            // Applies when screen width is <1920px
+            1800: {
+                slidesPerView: 3
+            },
+            1439: {
+                slidesPerView: 3
+            },
+            1023: {
+            slidesPerView: 2
+            },
+            767: {
+            slidesPerView: 1,
+            }
         },
     });
 
@@ -1783,7 +1884,7 @@
         });
     });
 
-    // Initialize swiper for technology-section (for mobile)
+    // Initialize swiper for services-section (for mobile)
     var services_swiper = new Swiper('.offerings-slider', {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -1820,6 +1921,45 @@
         // Responsive breakpoints
         simulateTouch: true,
         grabCursor: true,
+    });
+
+    // Initialize Count up animation for states-section
+    document.addEventListener('DOMContentLoaded', function () {
+        AOS.init(); // your fade-up scroll animation
+
+        const options = {
+        duration: 2,
+        useEasing: true,
+        separator: ',',
+        };
+
+        const counters = [
+        { id: 'stat-years', value: 13 },
+        { id: 'stat-customers', value: 1500 },
+        { id: 'stat-projects', value: 50000 },
+        { id: 'stat-engineers', value: 100 },
+        { id: 'stat-machines', value: 200 },
+        ];
+
+        // Trigger when 70% of stats-section is visible
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            // Animate all counters
+            counters.forEach(counter => {
+                const el = document.getElementById(counter.id);
+                el.innerHTML = '0'; // Reset before animating
+                const count = new countUp.CountUp(counter.id, counter.value, options);
+                if (!count.error) count.start();
+            });
+            }
+        });
+        }, {
+        threshold: 0.7 // 70% visible before triggering
+        });
+
+        const statsSection = document.querySelector('.stats-section');
+        observer.observe(statsSection);
     });
 
     </script>                 

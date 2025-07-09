@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts (Inter, Cal sans, Poppins, Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap 5.3.0 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+
+    <style>
+
+        .accordion-title span{
+
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'poppins', sans-serif;
+            color: #1C1B1F;
+        }
+
+        .accordion-content{
+
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'poppins', sans-serif;
+            color: #ABABAB;
+        }
+
+        @media(max-width: 767px) {
+
+            .breadcrumb {
+                padding: 0 20px;
+            }
+
+            .logos-section {
+
+                margin-top: 40px !important;
+            }
+
+            .unique-testimonial-section {
+                margin-top: 40px !important;
+            }
+
+            .container-fluid:has(.tech-mobile-visible) {
+
+                margin-top: 40px !important;
+            }
+
+            .tech-mobile-visible .accordion-container{
+
+                margin-top: 0 !important;
+            }
+
+            .container-fluid:has(.last-para){
+
+                margin-top: 40px !important;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- ---------------Header starts--------------- -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-12 p-0">
+                <!-- ---------------Top-Bar Starts--------------- -->
+                <div class="top-bar">
+                    <!-- ---------------Wrapper Starts--------------- -->
+                    <div class="wrapper d-flex justify-content-between align-items-center">
+                        <div class="top-left-items">
+                            <ul>
+                                <li><img src="images/leftvector.svg"><img src="images/rightvector.svg"></li>
+                                <li class="fw-semibold"><a href="#"> How we can help ?</a></li>
+                                <li><a href="machines.html"> Machines</a></li>
+                                <li><a href="materials.html"> Material</a></li>
+                                <li><a href="#"> Design</a></li>
+                            </ul>
+                        </div>
+                        <div class="top-right-items">
+                            <img src="images/call.svg" alt="Call icon" class="call-icon me-2 mb-1">
+                            <span class="top-bar-phone">+91 888-777-8887</span>
+                        </div>
+                    </div>
+                    <!-- ---------------Wrapper Ends--------------- -->
+                </div>
+                <!-- ---------------Top-Bar ends--------------- -->
+            </div>
+
+            <div class="col-md-12 p-0 bottom-shadow">
+                <!-- ---------------Wrapper Starts--------------- -->
+                <div class="wrapper">
+                    <!-- ---------------Navbar Starts--------------- --> 
+                    <nav class="navbar navbar-expand-lg navbar">
+                        <div class="container p-0 m-0">
+                            <a class="navbar-brand" href="index.html"><img src="images/main-logo.svg"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="industries.html">Industries</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="technology.html">Technologies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="about_us.html">About us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="contact_us.html">Contact us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                                    </li>
+                                </ul>
+                                <button class="navbar-btn ms-auto">Let's Discuss</button>
+                            </div>
+                            
+                        </div>
+                    </nav>
+                    <!-- ---------------Navbar Ends--------------- --> 
+                </div>
+                <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Header Ends--------------- -->
+
+
+    <!-- ---------------Breadcrumb & Heading Starts--------------- -->
+    <div class="wrapper">
+
+        <nav class="mt-5" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+            </ol>
+        </nav>
+
+        <div class="contact-us-heading text-center">
+            <h1>Explore how additive<br>3D printing can help your business.</h1>
+        </div>
+
+    </div>
+    <!-- ---------------Breadcrumb & Heading Ends--------------- -->
+
+
+    <!-- ---------------Form-Section Starts--------------- -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+            <!-- ---------------Wrapper Starts--------------- -->
+                <div class="wrapper">
+
+                    <div class="c-form-container">
+                        
+                        <div class="c-form-content">
+                            <h1>Let's connect</h1>
+                            
+                            <form action="#" method="POST" class="c-form-body">
+                                <div>
+                                    <input type="text" name="name" id="name" placeholder="Your Name" class="c-form-input">
+                                </div>
+                                
+                                <div>
+                                    <input type="email" name="email" id="email" placeholder="Email" class="c-form-input">
+                                </div>
+
+                                <div>
+                                    <input type="tel" name="phone" id="phone" placeholder="Phone Number" class="c-form-input">
+                                </div>
+
+                                <div>
+                                    <select id="technology" name="technology" class="c-form-select">
+                                        <option selected disabled>Technology Required</option>
+                                        <option>3D Printing</option>
+                                        <option>CNC Machining</option>
+                                        <option>Laser Cutting</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <textarea name="comment" id="comment" rows="4" placeholder="Comment" class="c-form-textarea"></textarea>
+                                </div>
+
+                                <div>
+                                    <button type="submit" class="c-form-submit-btn">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="c-form-image-wrapper">
+                            <img src="images/form-img.png" alt="Contact Form Image" class="c-form-image">
+                        </div>
+                    </div>
+
+                </div>
+            <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Form-Section Ends--------------- -->
+
+
+    <!-- ---------------Stats-Section Starts--------------- -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <section class="stats-section p-0">
+                    <div class="stats-container" style="background-color: #F6F6F6; padding: 20px 0;">
+                        <div class="stats-box">
+                            <span class="stats-number">13</span>
+                            <span class="stats-label">Years</span>
+                        </div>
+                        <div class="stats-divider"></div>
+                        <div class="stats-box">
+                            <span class="stats-number">1500</span>
+                            <span class="stats-label">Customers</span>
+                        </div>
+                        <div class="stats-divider"></div>
+                        <div class="stats-box">
+                            <span class="stats-number">50,000</span>
+                            <span class="stats-label">Projects</span>
+                        </div>
+                        <div class="stats-divider"></div>
+                        <div class="stats-box">
+                            <span class="stats-number">100</span>
+                            <span class="stats-label">Engineers</span>
+                        </div>
+                        <div class="stats-divider"></div>
+                        <div class="stats-box">
+                            <span class="stats-number">200</span>
+                            <span class="stats-label">Machines</span>
+                        </div>
+                    </div>
+                </section>                  
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Stats-Section Ends--------------- -->
+
+
+    <!-- ---------------Company-Logos Starts--------------- -->
+    <div class="container-fluid logos-section bg-white py-0" style="margin-top: 80px;">
+        <div class="row">
+            <div class="col-md-12 w-100">
+                    <div class="company-logos">
+                        <div class="company-logos-text">
+                            <h2 class="company-logos-title text-center text-dark">Trusted by India's leading companies</h2>
+                            <p class="company-logos-desc text-center text-dark">Our 3D printing technology is trusted by India's most respected names in Automotive, Consumer electronic, Packaging, Household equipments, Healthcare, Dental, Aerospace, Defense, and Advanced manufacturing.</p>
+                        </div>
+                        <div class="swiper company-logos-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/company-logo-1.png" alt="Company Logo 1"></div>
+                                <div class="swiper-slide"><img src="images/company-logo-2.png" alt="Company Logo 2"></div>
+                                <div class="swiper-slide"><img src="images/company-logo-3.png" alt="Company Logo 3"></div>
+                                <div class="swiper-slide"><img src="images/company-logo-4.png" alt="Company Logo 4"></div>
+                                <div class="swiper-slide"><img src="images/company-logo-5.png" alt="Company Logo 5"></div>
+                                <div class="swiper-slide"><img src="images/company-logo-6.png" alt="Company Logo 6"></div>
+                                <div class="swiper-slide"><img src="images/company-logo-7.png" alt="Company Logo 7"></div>
+                                <div class="swiper-slide"><img src="images/company-logo-8.png" alt="Company Logo 8"></div>
+                                <div class="swiper-slide"><img src="images/company-logo-9.png" alt="Company Logo 9"></div>
+                                <div class="swiper-slide"><img src="images/company-logo-10.png" alt="Company Logo 10"></div>
+                                <div class="swiper-slide"><img src="images/company-logo-11.png" alt="Company Logo 11"></div>
+                                <div class="swiper-slide"><img src="images/company-logo-12.png" alt="Company Logo 12"></div>
+                                <div class="swiper-slide"><img src="images/company-logo-13.png" alt="Company Logo 13"></div>
+                            </div>
+                            </div>                          
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Company-Logos Ends--------------- -->
+
+
+    <!-- ---------------Partners-Section Starts--------------- -->
+     <div class="contriner-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- ---------------Wrapper Starts--------------- -->
+                <div class="wrapper">
+
+                    <section class="unique-testimonial-section" style="margin-top: 80px;">
+                        <h2 class="unique-section-title">What Our Partners Say</h2>
+                        <div class="unique-testimonial-slider-container">
+                            <button class="unique-slider-arrow left" onclick="moveSlide(-1)"><img src="images/arrow-left.svg"></button> <!-- Left arrow -->
+                            <div class="unique-slider-wrapper">
+                                <div class="unique-slider-track" id="testimonialTrack">
+
+                                    <div class="unique-testimonial-card">
+                                        <div class="unique-card-orange-overlay"></div>
+                                        <div class="unique-profile-image-wrapper">
+                                            <img src="images/partners-pro-img.png" alt="Partner Profile 1">
+                                        </div>
+                                        <div class="unique-card-content">
+                                            <div class="unique-testimonial-name">Sample Name 1</div>
+                                            <p class="unique-testimonial-text">
+                                                Lorem ipsum dolor sit amet consectetur. Porta sed tempor scelerisque tellus tellus arcu. Interdum pharetra quam condimentum pellentesque suspendisse. Proin facilisi lobortis nibh ac nullam orci fringilla. Amet leo phasellus libero velit non nulla nunc ut.
+                                            </p>
+                                            <div class="unique-partner-info">NAME ABC <br> <span>Designation</span></div>
+                                            <div class="unique-stats-row">
+                                                <div class="unique-stat-item">
+                                                    <span class="unique-stat-value">DROP IN</span><br>
+                                                    <span class="unique-stat-description">TAT</span>
+                                                </div>
+                                                <div class="stats-divider"></div>
+                                                <div class="unique-stat-item d-flex align-items-center justify-content-between">
+                                                    <span class="unique-stat-value">60%</span>
+                                                    <span class="unique-stat-description">INCREASE IN<br>CALL CENTER EFFICIENCY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="unique-testimonial-card">
+                                        <div class="unique-card-orange-overlay"></div>
+                                        <div class="unique-profile-image-wrapper">
+                                            <img src="images/partners-pro-img.png" alt="Partner Profile 1">
+                                        </div>
+                                        <div class="unique-card-content">
+                                            <div class="unique-testimonial-name">Sample Name 1</div>
+                                            <p class="unique-testimonial-text">
+                                                Lorem ipsum dolor sit amet consectetur. Porta sed tempor scelerisque tellus tellus arcu. Interdum pharetra quam condimentum pellentesque suspendisse. Proin facilisi lobortis nibh ac nullam orci fringilla. Amet leo phasellus libero velit non nulla nunc ut.
+                                            </p>
+                                            <div class="unique-partner-info">NAME ABC <br> <span>Designation</span></div>
+                                            <div class="unique-stats-row">
+                                                <div class="unique-stat-item">
+                                                    <span class="unique-stat-value">DROP IN</span><br>
+                                                    <span class="unique-stat-description">TAT</span>
+                                                </div>
+                                                <div class="stats-divider"></div>
+                                                <div class="unique-stat-item d-flex align-items-center justify-content-between">
+                                                    <span class="unique-stat-value">60%</span>
+                                                    <span class="unique-stat-description">INCREASE IN<br>CALL CENTER EFFICIENCY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="unique-testimonial-card">
+                                        <div class="unique-card-orange-overlay"></div>
+                                        <div class="unique-profile-image-wrapper">
+                                            <img src="images/partners-pro-img.png" alt="Partner Profile 1">
+                                        </div>
+                                        <div class="unique-card-content">
+                                            <div class="unique-testimonial-name">Sample Name 1</div>
+                                            <p class="unique-testimonial-text">
+                                                Lorem ipsum dolor sit amet consectetur. Porta sed tempor scelerisque tellus tellus arcu. Interdum pharetra quam condimentum pellentesque suspendisse. Proin facilisi lobortis nibh ac nullam orci fringilla. Amet leo phasellus libero velit non nulla nunc ut.
+                                            </p>
+                                            <div class="unique-partner-info">NAME ABC <br> <span>Designation</span></div>
+                                            <div class="unique-stats-row">
+                                                <div class="unique-stat-item">
+                                                    <span class="unique-stat-value">DROP IN</span><br>
+                                                    <span class="unique-stat-description">TAT</span>
+                                                </div>
+                                                <div class="stats-divider"></div>
+                                                <div class="unique-stat-item d-flex align-items-center justify-content-between">
+                                                    <span class="unique-stat-value">60%</span>
+                                                    <span class="unique-stat-description">INCREASE IN<br>CALL CENTER EFFICIENCY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <button class="unique-slider-arrow right" onclick="moveSlide(1)"><img src="images/arrow-right.svg"></button> <!-- Right arrow -->
+                        </div>
+                    </section>
+
+                </div>
+                <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+     </div>
+    <!-- ---------------Partners-Section Ends--------------- -->
+
+
+    <!-- ---------------FAQ-Section Starts--------------- -->
+     <div class="container-fluid" style="margin-top: 80px;">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- ---------------Wrapper Starts--------------- -->
+                <div class="wrapper">
+                    <div class="tech-mobile-visible">
+
+                        <div class="accordion-container">
+                            <!-- Accordion Item 1 -->
+                            <div class="accordion-item">
+                                <button class="accordion-title">
+                                    <span class="">Lorem ipsum dolor sit amet consectetur. ?</span>
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-content-inner">
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                    </div>
+                                </div>
+                            </div>                  
+                            <div class="accordion-item">
+                                <button class="accordion-title">
+                                    <span class="">Lorem ipsum dolor sit amet consectetur. ?</span>
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-content-inner">
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                    </div>
+                                </div>
+                            </div>                  
+                            <div class="accordion-item">
+                                <button class="accordion-title">
+                                    <span class="">Lorem ipsum dolor sit amet consectetur. ?</span>
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-content-inner">
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                    </div>
+                                </div>
+                            </div>                  
+                            <div class="accordion-item">
+                                <button class="accordion-title">
+                                    <span class="">Lorem ipsum dolor sit amet consectetur. ?</span>
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-content-inner">
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                    </div>
+                                </div>
+                            </div>                  
+                            <div class="accordion-item">
+                                <button class="accordion-title">
+                                    <span class="">Lorem ipsum dolor sit amet consectetur. ?</span>
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-content-inner">
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                        Lorem ipsum dolor sit amet consectetur. Morbi in ut diam arcu tellus neque nunc.
+                                    </div>
+                                </div>
+                            </div>                  
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+     </div>
+    <!-- ---------------FAQ-Section Ends--------------- -->
+
+
+    <!-- ---------------Last-Section Starts--------------- -->
+    <div class="container-fluid" style="margin-top: 80px;">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- ---------------Wrapper Starts--------------- -->
+                <div class="wrapper">
+                    <div class="last-para text-center">
+                        <h1>Got more questions? <span>Fill up your form given above.</span></h1>
+                        <p>Your journey to seamless online teaching and training begins with Ingenium Education!</p>
+                    </div>
+                </div>
+                <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Last-Section Ends--------------- -->
+
+
+    <!-- ---------------Footer Starts--------------- -->
+     <div class="container-fluid bg-black" style="margin-top: 80px;">
+        <div class="row">
+            <div class="col-md-12">
+
+                    <footer class="ft-footer">
+                        <div class="ft-container">
+                            <!-- Main Footer Content -->
+                            <div class="ft-main">
+                                <div class="ft-col ft-col-brand">
+                                    <img src="images/main-logo.svg">
+                                    <p class="ft-brand-motto">We are a technology & innovation company that helps bring new ideas to life for organizations and new product developers.</p>
+                                </div>
+                
+                                <div class="ft-col">
+                                    <h3>Service</h3>
+                                    <ul>
+                                        <li><a href="#">Support & Technical Assistance</a></li>
+                                        <li><a href="#">Tailored 3D Printing Solutions</a></li>
+                                        <li><a href="#">Reverse Engineering & Digital Replication</a></li>
+                                        <li><a href="#">Scalable Manufacturing</a></li>
+                                        <li><a href="#">Machine Selection & Material Training</a></li>
+                                    </ul>
+                                </div>
+                
+                                <div class="ft-col">
+                                    <h3>Company</h3>
+                                    <ul>
+                                        <li><a href="#">Industries</a></li>
+                                        <li><a href="#">Technology</a></li>
+                                        <li><a href="#">Machines</a></li>
+                                        <li><a href="#">Designs</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                
+                            <!-- Horizontal Line -->
+                            <hr class="ft-hr">
+                
+                            <!-- Bottom Legal/Contact Info -->
+                            <div class="ft-legal">
+                                <p class="m-0"><i class="fa-regular fa-copyright"></i> Copyright Sahas production</p>
+                                <ul class="ft-legal-list">
+                                    <li>
+                                        <img src="images/footer-location-icon.svg" alt="Location Icon" class="me-2">
+                                        8819 Ohio St. South Gate, CA 90280
+                                    </li>
+                                    <li>
+                                        <img src="images/footer-email-icon.svg" alt="Email Icon" class="me-2">
+                                        Ourstudio@hello.com
+                                    </li>
+                                    <li>
+                                        <img src="images/footer-phone-icon.svg" alt="Phone Icon" class="me-2">
+                                        +1 386-688-3295
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                <!-- ---------------Wrapper Ends--------------- -->
+            </div>
+        </div>
+     </div>
+    <!-- ---------------Footer Ends--------------- -->
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Bootstrap 5.3.0 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+
+    // Initialize Swiper for company logos slider
+    const swiper = new Swiper('.company-logos-slider', {
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        speed: 3000,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false
+        },
+        freeMode: true,
+        freeModeMomentum: false,
+        allowTouchMove: true,
+        grabCursor: true
+    });
+
+    // Partners Section Testimonials Slider Functionality
+    $(document).ready(function () {
+        const testimonialTrack = document.getElementById('testimonialTrack');
+        const testimonialCards = document.querySelectorAll('.unique-testimonial-card');
+        let currentIndex = 0;
+        let cardWidth = 0;
+
+        // Pagination
+        const paginationContainer = document.createElement('div');
+        paginationContainer.className = 'unique-pagination';
+        document.querySelector('.unique-testimonial-slider-container').appendChild(paginationContainer);
+
+        function createPaginationDots() {
+            paginationContainer.innerHTML = '';
+            testimonialCards.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                if (index === currentIndex) dot.classList.add('active');
+                dot.addEventListener('click', () => showSlide(index));
+                paginationContainer.appendChild(dot);
+            });
+        }
+
+        function updateCardWidth() {
+            if (testimonialCards.length > 0) {
+                const style = getComputedStyle(testimonialCards[0]);
+                cardWidth = testimonialCards[0].offsetWidth + parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+                showSlide(currentIndex);
+            }
+        }
+
+        function showSlide(index) {
+            if (index >= testimonialCards.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = testimonialCards.length - 1;
+            } else {
+                currentIndex = index;
+            }
+            testimonialTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+            // Update dots
+            const dots = document.querySelectorAll('.unique-pagination .dot');
+            dots.forEach((dot, idx) => dot.classList.toggle('active', idx === currentIndex));
+        }
+
+        window.moveSlide = function (direction) {
+            showSlide(currentIndex + direction);
+        };
+
+        $(window).on('resize', function () {
+            updateCardWidth();
+            togglePagination();
+        });
+
+        function togglePagination() {
+            if (window.innerWidth < 767) {
+                paginationContainer.style.display = 'flex';
+                createPaginationDots();
+            } else {
+                paginationContainer.style.display = 'none';
+            }
+        }
+
+        // Enable smooth transition
+        testimonialTrack.style.transition = 'transform 0.4s ease';
+
+        // ===== Swipe Support (Mobile) =====
+        let startX = 0;
+        testimonialTrack.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        testimonialTrack.addEventListener('touchend', (e) => {
+            const endX = e.changedTouches[0].clientX;
+            const diff = endX - startX;
+
+            if (Math.abs(diff) > 50) {
+                if (diff < 0) {
+                    moveSlide(1); // Swipe left
+                } else {
+                    moveSlide(-1); // Swipe right
+                }
+            }
+        });
+
+        // Prevent unwanted text selection during drag
+        testimonialTrack.addEventListener('mouseleave', () => {
+            isDragging = false;
+        });
+
+        updateCardWidth();
+        togglePagination();
+        showSlide(currentIndex);
+    });
+
+
+    // Get all the accordion title buttons
+    const accordionTitles = document.querySelectorAll('.accordion-title');
+
+    // Add a click event listener to each title
+    accordionTitles.forEach(title => {
+        title.addEventListener('click', () => {
+            // Find the parent accordion item
+            const accordionItem = title.parentElement;
+
+            // Close all other accordion items
+            // This makes it so only one item can be open at a time
+            document.querySelectorAll('.accordion-item').forEach(item => {
+                // If the item is not the one that was clicked and it's active, close it
+                if (item !== accordionItem && item.classList.contains('active')) {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Toggle the 'active' class on the clicked item
+            accordionItem.classList.toggle('active');
+        });
+    });
+    </script>                 
+
+</body>
+</html>
